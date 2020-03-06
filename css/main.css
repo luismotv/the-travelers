@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    max-width: 1330px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+header > h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2.5em;
+    line-height: 2em;
+    letter-spacing: 0.3em;
+    font-weight: 600;
+}
+
+header {
+   display: grid;
+   grid-template-columns: 0.5fr 3fr 1fr;
+   background-color: #268281;
+}
+
+
+#breadcrumbs {
+    grid-column: 1 / 3;
+    background-color: #085352;
+    padding-left: 0.5em;
+    padding-bottom: 0.5em;
+    padding-top: 0.2em;
+}
+
+#breadcrumbs a:link, #breadcrumbs a:hover, #breadcrumbs a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+#breadcrumbs a:hover {
+    font-weight: 600;
+}
+
+.breadcrumb-symbol {
+    color: #fff;
+    font-size: 1em;    
+}
+
+#main-menu {
+   grid-column: 1;
+   grid-row: 1;
+    
+}
+#main-title {
+   grid-column: 2;
+   grid-row: 1;
+   text-align: center;
+}
+
+#main-logo {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#main-logo a img {
+   width: 100%; 
+}
+
+#main-menu > button {
+    background-color: #268281;
+    color: #fff;
+    font-size: 1.3em;
+    padding: 1em;
+    border: 0;
+    text-transform: uppercase;
+    width: 100%;
+    cursor: pointer;
+}
+
+#main-menu > button:hover {
+    background-color: #9ce7a2; 
+    color: #268281;
+}
+
+#main-menu > ul {
+    list-style: none;
+    padding: 0.5em;
+    background-color: #268281;
+}
+
+#main-menu > ul > li{
+    padding: 0.5em 0;
+}
+
+#main-menu > ul > li > a{
+    text-decoration: none;   
+}
+
+#main-menu > ul > li > a:link, #main-menu > ul > li > a:hover, #main-menu > ul > li > a:visited {
+    text-transform: uppercase;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+
+/*START #banner*/
+#banner> div{
+    position: relative;
+}
+#banner> div > div > img{
+    max-width: 100%;
+}
+
+#banner> div > div> span {
+    font-size: 10em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #268281;
+    text-shadow: 4px 4px 2px #9ce7a2;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+}
+
+#banner> div > div > div {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+#banner> div > div > div > a {
+    background-color: #268281;
+    color: #fff;
+    font-size: 1.3em;
+    padding: 1em;
+    border: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 2px solid #9ce7a2;
+    border-radius:0.5em;
+}
+
+#banner> div > div > div >  a, #banner> div > div > div >  a:link, #banner> div > div > div >  a:hover, #banner> div > div > div >  a:visited {
+    text-decoration: none;
+}
+
+#banner> div > div > div > a:hover {
+    background-color: #9ce7a2;
+    color: #268281;
+    border: 2px solid #268281;
+}
+
+/*END #banner*/
+
+
+/*START #countries-images*/
+#countries-images {
+    list-style-type: none;
+}
+
+#countries-images li {
+    float: left;
+    width: 50%;
+    max-height: 220px;
+    overflow-y: hidden;
+    padding-bottom: 200px;
+    background-color: #000;
+    position: relative;
+    
+}
+
+#countries-images li > span {
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.6em;
+    top: 30%;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 2px #000;
+    transform: translate(-30%, -50%);
+}
+
+#countries-images li > i {
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.3em;
+    top: 45%;
+    text-shadow: 3px 3px 2px #000;
+    border: 1px solid #fff;
+    transform: translate(-30%, -45%);
+    padding: 0.3em;
+}
+
+#countries-images img {
+    width: 100%;
+    
+}
+
+
+/*END #countries-images*/
+
+/*START #main-content*/
+#main-content{
+    clear: both;
+}
+/*END #main-content*/
+
+
+/*styles for javascript*/
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}

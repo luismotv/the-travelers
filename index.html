@@ -3,21 +3,24 @@
 <html>
 	<head>
 		<title>The Travelers</title>
+		<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,600,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/main.css">
 	</head>
 	
 	<body>
 		<header>
 			<!-- breadcrumbs navigation -->
-			<h1 id="main-title">Travelers</h1>
-			<nav>
-				> &nbsp; 
+			<h1 id="main-title">The Travelers</h1>
+
+			<nav id="breadcrumbs">
+				<span class="breadcrumb-symbol"> > </span> &nbsp; 
 				<a href="index.html">Home</a>
 			</nav>
-			<br>
+			
 			<!-- First menu with main navigation -->
 			<nav id="main-menu">
 				<button type="button">Menu</button>
-				<ul>
+				<ul class="hide">
 					<li><a href="ecuador.html">Ecuador</a></li>
 					<li><a href="Philippines.html">Philippines</a></li>
 					<li><a href="SouthKorea.html">South Korea</a></li>
@@ -28,30 +31,61 @@
 			</nav>
 			
 			<!-- BEGIN Logo -->
-			<div>
+			<div id="main-logo">
 				<a href="index.html"><img src="images/logo-travelers.png" alt=""></a>
 			</div>
 			<!-- END Logo -->
 			
 		</header>
 		
-		<div>
+		<!-- slider banner gallery-->
+		<div id="banner">
 
 			<div>
-				<img width="1440" src="images\banner-1.jpg" alt="">
+				<div>
+					<span>Welcome!</span>
+					<img width="1440" src="images\banner-1.jpg" alt="">
+					<div>
+						<a href="#countries-images">Visit our countries</a>
+					</div>
+				</div>
 			</div>
 
 			<!-- banner -->
-			<ul>
-				<li><a href="ecuador.html"><img width="1080" src="images/ecuador/ecuador-turtle-butterfly.jpg" alt=""></a></li>
-				<li><a href="Philippines.html"><img width="1080" src="images/Philippines/PH_ManilaBay.jpg" alt=""></a></li>
-				<li><a href="SouthKorea.html"><img width="1080" src="images/SouthKorea/southkorea_banner-home.jpg" alt=""></a></li>
-				<li><a href="Turkey.html"><img width="1080" src="images/Turkey/maidentower.jfif" alt=""></a></li>
-				<li><a href="vietnam.html"><img width="1080" src="images/vietnam/banahill.jpg" alt=""></a></li>
+			<ul id="countries-images">
+				<li>
+					<a href="ecuador.html"><img width="1080" src="images/ecuador/ecuador-turtle-butterfly.jpg" alt=""></a>
+					<span>Explore Ecuador</span>
+					<i>Five worlds in one</i>
+				</li>
+
+				<li>
+					<a href="Philippines.html"><img width="1080" src="images/Philippines/PH_ManilaBay.jpg" alt=""></a>
+					<span>Explore Philippines</span>
+					<i>Phrase</i>
+				</li>
+
+				<li>
+					<a href="SouthKorea.html"><img width="1080" src="images/SouthKorea/southkorea_banner-home.jpg" alt=""></a>
+					<span>South Korea</span>
+					<i>Phrase</i>
+				</li>
+
+				<li>
+					<a href="Turkey.html"><img width="1080" src="images/Turkey/maidentower.jfif" alt=""></a>
+					<span>Explore Turkey</span>
+					<i>Phrase</i>
+				</li>
+
+				<li>
+					<a href="vietnam.html"><img width="1080" src="images/vietnam/banahill.jpg" alt=""></a>
+					<span>Explore Vietnam</span>
+					<i>Phrase</i>
+				</li>
 			</ul>			
 		</div>
 		
-		<main>
+		<main id="main-content">
 			<section>
 				<!-- section with links to the home pages of the 5 countries and and extra item ?? -->
 				<ul>
@@ -184,5 +218,9 @@
 				</address>
 			</section>
 		</footer>
+
+		<!-- Add javascript behavior -->
+		<script src="js/behavior.js"></script>
+
 	</body>
 </html>
