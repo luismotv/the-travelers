@@ -1,0 +1,45 @@
+
+Font used:
+https://fonts.google.com/?selection.family=Barlow+Condensed:400,600,700&query=barlow
+
+Layout webpage using grid
+https://developer.mozilla.org/en-US/docs/Web/CSS/grid
+
+In CSS Grid using auto-fit how to make one cell occupy 2 columns?
+https://stackoverflow.com/questions/50385514/in-css-grid-using-auto-fit-how-to-make-one-cell-occupy-2-columns
+
+Use addEventListener in javascript
+https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+
+Several examples about how to make galleries using CSS
+https://www.w3schools.com/howto/howto_css_hero_image.asp
+
+Positioning elements using flex
+https://thoughtbot.com/blog/positioning
+
+Prevent a link from going to an URL using javascript in order to execute other instructions
+https://www.w3schools.com/jsref/event_preventdefault.asp
+
+Change the mouse pointer using JavaScript
+https://stackoverflow.com/questions/4564251/change-the-mouse-pointer-using-javascript
+
+Navigate to another URL using javascript
+https://developer.mozilla.org/en-US/docs/Web/API/Window/location
+
+How to pass arguments to addEventListener listener function?
+https://stackoverflow.com/questions/256754/how-to-pass-arguments-to-addeventlistener-listener-function
+
+Get and set css values using javascript
+https://zellwk.com/blog/css-values-in-js/
+https://gomakethings.com/two-ways-to-set-an-elements-css-with-vanilla-javascript/
+
+Show and hide an element using javascript and css
+https://gomakethings.com/how-to-show-and-hide-elements-with-vanilla-javascript/
+
+Change the mouse cursor using CSS
+https://developer.mozilla.org/en-US/docs/Web/CSS/cursor
+
+Explanation about the position attribute of CSS
+https://developer.mozilla.org/en-US/docs/Web/CSS/position
+
+
