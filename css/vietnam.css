@@ -1,0 +1,51 @@
+#main-menu{
+    letter-spacing: 0.15em
+}
+
+.country-info {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 0 auto;
+ margin-top: 2em;
+}
+
+.country-info td, .country-info tr {
+    border: 1px solid #ddd;
+    padding: 1em;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.country-info th {
+    text-transform: uppercase;
+    font-size: 2em;
+    background-color: rgb(248, 0, 0);
+    color: #fff;
+    padding: 0.5em;
+}
+
+.country-info td > h3 {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.country-info td > img {
+    margin: 0 auto;
+    display: block;
+}
+
+main > section:nth-of-type(1) > article > h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #6bbe43;
+    padding: 1em 0;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+}
+
+main > section:nth-of-type(1) > article > p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: justify;
+    padding: 0.5em;
