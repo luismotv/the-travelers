@@ -3,52 +3,52 @@
 <html>
 	<head>
 		<title>The Travelers - South Korea</title>
-		<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet"> 
-		<link rel="stylesheet" href="home-test-css-01.css"> 
+		<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,600,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/southkorea.css">
 	</head>
 	
 	<body>
 		<header>
-			<h1 id="main-title">Travelers - South Korea</h1>
+			<h1 id="main-title">Travelers</h1>
 			
 			<!-- breadcrumbs navigation -->
-			<nav>
-				> &nbsp; 
+			<nav id="breadcrumbs">
+				<span class="breadcrumb-symbol"> > </span> &nbsp;
 				<a href="index.html">Home</a>
-				&nbsp;&nbsp;>
+				<span class="breadcrumb-symbol"> > </span> &nbsp;
 				<a href="SouthKorea.html">South Korea</a>
 			</nav>
-			<br>		
+			<br>
+			
 			<!-- First menu with main navigation -->
 			<nav id="main-menu">
 				<button type="button">Menu</button>
 				<ul>
-					<li><a href="./ecuador.html">Ecuador</a></li>
-					<li><a href="./Philippines.html">Philippines</a></li>
-					<li><a href="./SouthKorea.html">South Korea</a></li>
-					<li><a href="./Turkey.html">Turkey</a></li>
-					<li><a href="./vietnam.html">Vietnam</a></li>
+					<li><a href="ecuador.html">Ecuador</a></li>
+					<li><a href="Philippines.html">Philippines</a></li>
+					<li><a href="SouthKorea.html">South Korea</a></li>
+					<li><a href="Turkey.html">Turkey</a></li>
+					<li><a href="vietnam.html">Vietnam</a></li>
 				</ul>
 			</nav>
-			
-			<!-- BEGIN Logo -->
-			<div>
-				<a href="index.html"><img src="images/logo-travelers.png" alt=""></a>
+			<div id="main-logo">
+				<a href="index.html"><img src="images/Turkey/logo-travelers.png" alt=""></a>
 			</div>
-			<!-- END Logo -->	
-			
-			<section id="subscription">
-				<form name="subscription">
-					<label for="email">Email or Phone</label>	
-					<input type="email" name="email">
-					
-					<label for="email">Password</label>	
-					<input type="password" name="password">
-					
-					<input value="Log In" type="submit">
-				</form>
-			</section>
 		</header>
+
+		<section id="subscription">
+			<form name="subscription">
+				<label for="email">Email or Phone</label>	
+				<input type="email" name="email">
+					
+				<label for="email">Password</label>	
+				<input type="password" name="password">
+					
+				<input value="Log In" type="submit">
+			</form>
+		</section>
+		
 		
 		<div>
 			<!-- banner -->
@@ -73,7 +73,7 @@
 					<p>
 					South Korea is a highly developed country and the world's 12th-largest economy by nominal GDP. Its citizens enjoy the world's fastest Internet connection speeds along with the world's second-best healthcare system, resulting in the third-highest health adjusted life expectancy in the world. The world's 5th largest exporter and 8th largest importer, South Korea is a global leader in many technologies and innovation-driven fields. Since 2014, South Korea has been named the world's most innovative country by the Bloomberg Innovation Index for 6 consecutive years. Since the 21st century, South Korea has been renowned for its globally influential pop culture such as K-pop, TV dramas and cinema, a phenomenon referred to as the Korean Wave.</p>
 					<form>
-						<table border="1">
+						<table class="country-info">
 							<tr>
 								<th colspan=
 								"3">Name of the country</th>
