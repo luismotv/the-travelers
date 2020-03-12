@@ -1,0 +1,31 @@
+.country-info {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.country-info td, .country-info tr {
+    border: 1px solid #ddd;
+    padding: 1em;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.country-info th {
+    text-transform: uppercase;
+    font-size: 2em;
+    background-color: #6BBE43;
+    color: #fff;
+    padding: 0.5em;
+}
+
+.country-info td > h3 {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.country-info td > img {
+    margin: 0 auto;
+    display: block;
+}
