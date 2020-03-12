@@ -36,6 +36,8 @@ Humber College - Web Programming and Design - ITC-5103-0NB - Team Traveler: phas
 
 #Resources
 
+Style a table -> https://www.w3schools.com/css/css_table.asp
+
 Apply Hero-image effect -> https://www.w3schools.com/howto/howto_css_hero_image.asp
 
 Use the grid property to organize elements inside it -> https://developer.mozilla.org/en-US/docs/Web/CSS/grid
