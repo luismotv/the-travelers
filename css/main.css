@@ -211,6 +211,74 @@ header {
 #main-content{
     clear: both;
 }
+
+#main-content > section {
+    display: flex;    
+    justify-content: center;
+}
+
+/*-BEGIN section ul*/
+#main-content > section:nth-of-type(1) > ul {
+    list-style: none;
+}
+
+#main-content > section:nth-of-type(1) > ul > li {
+    float: left;
+    padding: 1em;
+}
+
+#main-content > section:nth-of-type(1) > ul > li:not(:last-child)::after {
+    content: ' | ';
+    padding-left: 1.1em;
+    font-size: 1.4em;
+    color: rgb(38, 130, 129);
+}
+
+#main-content > section:nth-of-type(1) > ul > li > a {
+    color: #268281;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+#main-content > section:nth-of-type(1) > ul > li > a:link, #main-content > section:nth-of-type(1) > ul > li > a:hover, #main-content > section:nth-of-type(1) > ul > li > a:visited, #main-content > section:nth-of-type(1) > ul > li > a:active {
+    text-decoration: none;
+}
+
+#main-content > section:nth-of-type(1) > ul > li > a:hover {
+    text-shadow: 0.2em 0.1em 0.2em rgba(38, 130, 129, 0.4);
+}
+/*-END section ul*/
+
+/*-BEGIN section table*/
+#main-content > section:nth-of-type(2) > table {
+    /*display: none;*/
+    /*width: 80%;*/
+    display: block;
+}
+
+#main-content > section:nth-of-type(2) a {
+    display: block;
+    position: relative;
+    width: 200x;
+    height: 200px;
+    overflow: hidden;
+}
+
+#main-content > section:nth-of-type(2) a:after {
+    content: url('../images/camera-icon.png');
+    position: absolute;
+    top: 80%;
+    left: 2%;
+}
+
+
+#main-content > section:nth-of-type(2) img:hover {
+    position: relative;
+    filter: brightness(0.4) blur(1px);
+    width: 105%;
+}
+/*-END section table*/
+
 /*END #main-content*/
 
 
