@@ -1,3 +1,7 @@
+#main-ttitle{
+    letter-spacing:0.15em;
+}
+
 .country-info {
     border-collapse: collapse;
     width: 70%;
@@ -5,7 +9,7 @@
 }
 
 .country-info td, .country-info tr {
-    border: 1px solid #ddd;
+    border: 1px solid blue;
     padding: 1em;
     vertical-align: middle;
     text-align: center;
@@ -14,7 +18,7 @@
 .country-info th {
     text-transform: uppercase;
     font-size: 2em;
-    background-color: #6BBE43;
+    background-color: blue;
     color: #fff;
     padding: 0.5em;
 }
@@ -28,4 +32,20 @@
 .country-info td > img {
     margin: 0 auto;
     display: block;
+}
+
+main > section:nth-of-type(1) > article > h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+    color: blue;
+    padding: 1em 0;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+}
+
+main > section:nth-of-type(1) > article > p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: justify;
+    padding: 0.5em;
 }
