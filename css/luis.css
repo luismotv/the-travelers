@@ -1,14 +1,64 @@
+#subscription {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    padding: 1em;
+    background-color: #5f6868;
+}
+
+#subscription > form > label {
+    color: #fff;  
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+}
+
+#subscription > form > label:nth-of-type(2){
+    margin-left: 1em;
+}
+
+#subscription > form > input {
+    padding: 0.2em;
+    letter-spacing: 0.1em;
+}
+
+#subscription > form > input[type="submit"]{
+    background-color: #268281;
+    border: 0;
+    padding: 0.3em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    margin-left: 0.5em;
+}
+
+#subscription > form > input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #085352;
+}
+
+#subscription > form > label:after {
+    content: ": ";
+}
+
+#main-title {
+    letter-spacing: 0.15em;
+}
+
 .country-info {
     border-collapse: collapse;
     width: 70%;
     margin: 0 auto;
+    margin-top: 2em;
 }
 
 .country-info td, .country-info tr {
-    border: 1px solid #ddd;
+    border: 1px solid #4b872d;
     padding: 1em;
     vertical-align: middle;
     text-align: center;
+}
+
+.cell-7-span {
+    border: 2px solid #4b872d;
 }
 
 .country-info th {
@@ -29,3 +79,62 @@
     margin: 0 auto;
     display: block;
 }
+
+
+main > section:nth-of-type(1) > article > h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #6bbe43;
+    padding: 1em 0;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    text-align: left;
+}
+
+main > section:nth-of-type(1) > article > p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: justify;
+    padding: 0.5em;
+}
+
+main > section > article {
+    width: 100%;
+    text-align: center;
+}
+
+main > section > article > video {
+    margin-top: 1em;
+    padding: 1em;
+}
+
+#banner-slider{
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 960px;
+}
+
+#banner-slider > ul {
+    list-style: none;
+    
+}
+
+#banner-slider > ul > li {
+    position: absolute;
+}
+
+#banner-slider > ul > li > img {
+    width: 100%;
+    
+}
+
+
+
+
+
+
+
+
+
