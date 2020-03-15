@@ -13,13 +13,14 @@
     <header>
         <h1 id="main-title">Travelers Vietnam</h1>
 			<!-- breadcrumbs navigation -->
-			<nav>
-				> &nbsp; 
+            <nav id="breadcrumbs">
+				<span class="breadcrumb-symbol"> > </span> &nbsp; 
 				<a href="index.html">Home</a>
-				&nbsp;&nbsp;>
-				<a href="vietnam.html">Vietnam</a>
+				<span class="breadcrumb-symbol"> > </span> &nbsp;
+				<a href="vietnam.html">Ecuador</a>
 			</nav>
-			<br>
+
+			
         <!-- First menu with main navigation -->
         <nav id="main-menu">
             <button type="button">Menu</button>
@@ -32,27 +33,10 @@
             </ul>
         </nav>
         <!-- BEGIN Logo -->
-        <div>
+        <div id="main-logo">
             <a href="index.html"><img src="images/logo-travelers.png" alt=""></a>
         </div>
         <!-- END Logo -->
-        <nav id="secondary-menu">
-            <!-- second menu with search, help and share options -->
-            <ul>
-                <li>
-                    <form>
-                        <a href="#">Search</a>
-                        <input type="search" size="10">
-                    </form>
-                </li>
-                <li>
-                    <a href="#">Help</a>
-                </li>
-                <li>
-                    <a href="#">Share</a>
-                </li>
-            </ul>
-        </nav>
 
         <section id="subscription">
             <form name="subscription">
@@ -67,12 +51,15 @@
         </section><br>
     </header>
 
-    <div>
+    <div id="banner-slider">
         <!-- banner -->
+        <ul>
+            <li><img src="./images/vietnam/saigon.jpg" width="720px"></li>
+            <li><img src="./images/vietnam/hanoi.jpg" width="720px"></li>
+            <li><img src="./images/vietnam/hue.jpg" width="720px"></li>
 
-        <img src="./images/vietnam/saigon.jpg" width="720px">
-        <img src="./images/vietnam/hanoi.jpg" width="720px">
-        <img src="./images/vietnam/hue.jpg" width="720px">
+        </ul>
+        
 
     </div>
 
@@ -163,9 +150,10 @@
                 </form>
                 <br>
                 <!-- use video link, for example YouTube -->
-                <video width="720px" height="" controls autoplay>
-					<source src="./videos/vietnam/IntroducingVietnam.mp4" type="video/mp4">
-				</video>
+                <!-- <video width="960" controls src="https://www.youtube.com/watch?v=rZztMpGC42s"></video> -->
+
+                <video width="960" src="https://www.youtube.com/watch?v=rZztMpGC42s" controls></video>
+
             </article>
         </section>
 
