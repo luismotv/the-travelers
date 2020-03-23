@@ -1,130 +1,20 @@
-#subscription {
-    grid-row: 3;
-    grid-column: 1 / 4;
-    padding: 1em;
-    background-color: #5f6868;
-}
-
-#subscription>form>label {
-    color: #fff;
-    font-size: 1.1em;
-    letter-spacing: 0.1em;
-}
-
-#subscription>form>label:nth-of-type(2) {
-    margin-left: 1em;
-}
-
-#subscription>form>input {
-    padding: 0.2em;
-    letter-spacing: 0.1em;
-}
-
-#subscription>form>input[type="submit"] {
-    background-color: #268281;
-    border: 0;
-    padding: 0.3em;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 0.25em;
-    margin-left: 0.5em;
-}
-
-#subscription>form>input[type="submit"]:hover {
-    cursor: pointer;
-    background-color: #085352;
-}
-
-#subscription>form>label:after {
-    content: ": ";
-}
-
-#main-title {
-    letter-spacing: 0.15em;
-}
-
-.country-info {
-    border-collapse: collapse;
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 2em;
-}
-
-.country-info td,
-.country-info tr {
-    border: 1px solid #1111f5;
-    padding: 1em;
-    vertical-align: middle;
-    text-align: center;
-}
-
-.cell-7-span {
-    border: 2px solid #1111f5;
-}
-
-.country-info th {
-    text-transform: uppercase;
-    font-size: 2em;
-    background-color: #1111f5;
-    color: #fff;
-    padding: 0.5em;
-}
-
-.country-info td>h3 {
-    text-transform: uppercase;
-    font-size: 1.3em;
-    font-weight: 600;
-}
-
-.country-info td>img {
-    margin: 0 auto;
-    display: block;
-}
-
-main>section:nth-of-type(1)>article>h1 {
-    font-size: 2em;
-    text-transform: uppercase;
-    color: #1111f5;
-    padding: 1em 0;
-    margin-left: 0.3em;
-    font-weight: 600;
-    letter-spacing: 0.3em;
-    text-align: left;
-}
-
-main>section:nth-of-type(1)>article>p {
-    font-size: 1.2em;
-    line-height: 1.5em;
-    text-align: justify;
-    padding: 0.5em;
-}
-
-main>section>article {
-    width: 100%;
-    text-align: center;
-}
-
-main>section>article>video {
-    margin-top: 1em;
-    padding: 1em;
-}
-
-#banner-slider {
-    position: relative;
-    width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    height: 680px;
-}
-
-#banner-slider>ul {
-    list-style: none;
-}
-
-#banner-slider>ul>li {
-    position: absolute;
-}
-
-#banner-slider>ul>li>img {
-    width: 1280px;
-}
+<!DOCTYPE HTML><html><head><title>The Travelers - Philippines</title><link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,600,700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/main.css"><link rel="stylesheet" href="css/philippines.css"></head><body><header><h1 id="main-title">Travelers</h1><!-- breadcrumbs navigation --><nav>>&nbsp;
+<a href="index.html">Home</a>&nbsp;
+&nbsp;
+><a href="Philippines.html">Philippines</a></nav><br><!-- First menu with main navigation --><nav id="main-menu"><button type="button">Menu</button><ul><li><a href="./Ecuador.html">Ecuador</a></li><li><a href="./Philippines.html">Philippines</a></li><li><a href="./SouthKorea.html">South Korea</a></li><li><a href="./Turkey.html">Turkey</a></li><li><a href="./vietnam.html">Vietnam</a></li></ul></nav><!-- BEGIN Logo --><div><a href="index.html"><img src="./images/Philippines/logo-travelers.png" alt=""></a></div><!-- END Logo --><setion id="subscription"><form name="subscription"><label for="email">Email or Phone</label><input type="email" name="email"><label for="email">Password</label><input type="password" name="password"><input value="Log In" type="submit"></form></setion></header><div><!-- banner recommended width: 1920 --><ul><li><img src="./images/Philippines/PH_El_Nido.jpg" width="720px"></li><li><img src="./images/Philippines/PH_Mayon.jpg" width="720px"></li><li><img src="./images/Philippines/PH_Rice_Terraces.jpg" width="720px"></li></ul></div><main><!-- Main content for the homepage of each country --><section><article><h1>The Philippines,
+<i>official name</i>: The Republic of the Philippines </h1><p>Republic of the Philippines (Filipino: Republika ng Pilipinas),
+[a] is an archipelagic country in Southeast Asia. Situated in the western Pacific Ocean,
+it consists of about 7,
+641 islands[22] that are broadly categorized under three main geographical divisions from north to south: Luzon,
+Visayas and Mindanao. The capital city of the Philippines is Manila and the most populous city is Quezon City,
+both part of Metro Manila.[23] Bounded by the South China Sea on the west,
+the Philippine Sea on the east and the Celebes Sea on the southwest,
+the Philippines shares maritime borders with Taiwan to the north,
+Japan to the northeast,
+Vietnam to the west,
+Palau to the east,
+and Malaysia and Indonesia to the south.</p><table border="1"><tr><th colspan="3"><h3>Philippines</h3></th></tr><tr><td rowspan="7"><img src="./images/Philippines/PH_Philippines_flag.jpg" width="350",
+height="220"><br><img src="./images/Philippines/PH_Philippines_map.jpg" width="350",
+height="250"></td><td><h3>Population</h3></td><td>101 million </td></tr><tr><td><h3>Area</h3></td><td>300 000 Km<sup>2</sup></td><tr><td><h3>Currency</h3></td><td>Philippine Peso (₱) (PHP) </td></tr><tr><td><h3>Official Language</h3></td><td>Filipino </tr><tr><td><h3>GDP</h3></td><td>$383 billion </td></tr><tr><td><h3>Government</h3></td><td>Unitary presidential constitutional republic </td></tr></tr></table><br><video src="./videos/Philippines/PH_Philippines_Video.m4v" controls width="1100",
+height="640"></article></section><section><!-- Sections of each country --><ul><li><a href="Philippines-details.html#places">Places</a></li><li><a href="Philippines-details.html#foods">Food</a></li><li><a href="Philippines-details.html#travelingtips">Traveling tips</a></li><li><a href="Philippines-details.html#festivals">Festivals</a></li></ul></section></main><footer><section><!-- menu for social network links --><nav><ul><li><a href="#">YouTube</a></li><li><a href="#">Instagram</a></li></ul></nav></section><section><h2>Subscribe</h2><form method="GET"><label for="email">Email</label><input name="email" placeholder="your@email.com" required="required" type="email"><div><label for="select-country">Select country </label><select name="select-country"><option value="Ecuador">Ecuador </option><option value="South Korea">South Korea </option><option value="Philippines">Philippines </option><option value="Turkey">Turkey </option><option value="Vietnam">Vietnam </option></select></div><div>I want emails from the Travelers Inc. <a href="index.html">here.</a>The Travelers <a href="index.html">Privacy Policy.</a></div><input type="submit" value="Subscribe"></form></section><section><!-- menu for phone number and adress --><div><p>Call <a href="tel:+6494452687">445-2663</a>For support. </p></div><address>Write us to <a href="mailto:info@thetravelers.com">The Travelers</a>.<br>Visit us at:<br>123 Bloor Street,
+ON<br>Box 564<br>Canada </address></section></footer></body></html>
