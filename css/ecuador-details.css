@@ -96,3 +96,70 @@ main > section > article > .video {
 main > section > article > .video video {
   max-width: 100%;
 }
+
+/*BEGIN form*/
+
+/*-BEGIN section share your experience*/
+main > section:nth-of-type(5) > form > table {
+  margin: 0 auto;
+}
+
+main > section:nth-of-type(5) > form > table th {
+  text-align: right;
+}
+
+main > section:nth-of-type(5) > form > table th > label {
+  background-color: #268281;
+  color: #fff;
+  display: inline-block;
+  width: 80%;
+  padding: 0.45em 0.2em;
+}
+
+main > section:nth-of-type(5) > form input {
+    padding: 0.4em 0.2em;
+}
+
+main > section:nth-of-type(5) > form > table tr:nth-of-type(4), 
+main > section:nth-of-type(5) > form > table tr:nth-of-type(5), 
+main > section:nth-of-type(5) > form > table tr:nth-of-type(6){
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  margin-bottom: 0.5em;
+}
+
+main > section:nth-of-type(5) > form > table tr:nth-of-type(4) td,
+main > section:nth-of-type(5) > form > table tr:nth-of-type(5) td,
+main > section:nth-of-type(5) > form > table tr:nth-of-type(6) td{
+  width: 3.5rem;
+  height: 1.5rem;
+  background-color: #268281;
+  position: relative;
+  box-shadow: 2px 2px 1px 1px #ccc;
+}
+
+main > section:nth-of-type(5) > form > table tr:nth-of-type(4) td label,
+main > section:nth-of-type(5) > form > table tr:nth-of-type(5) td label,
+main > section:nth-of-type(5) > form > table tr:nth-of-type(6) td label{
+  color: #fff;
+  padding: 0.2em;
+  padding-left: 1.4em;
+  padding-right: 0.8em;
+}
+
+main > section:nth-of-type(5) > form > table tr:nth-of-type(4) td input,
+main > section:nth-of-type(5) > form > table tr:nth-of-type(5) td input,
+main > section:nth-of-type(5) > form > table tr:nth-of-type(6) td input{
+  position: absolute;
+  top: 15%;
+  margin-left: 0.2em;
+  
+}
+
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 3px #9ce7a2;
+}
+/*-END section share your experience*/
+
+/*END form*/

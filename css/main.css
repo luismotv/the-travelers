@@ -419,7 +419,7 @@ footer > section:nth-of-type(2) > form input {
     width: 100%;
 }
 
-footer > section:nth-of-type(2) > form > table tr td{
+footer > section:nth-of-type(2) > form > table tr td {
    border-bottom: 10px solid rgba(38, 130, 129, 0);
 }
 
