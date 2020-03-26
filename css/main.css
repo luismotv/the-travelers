@@ -476,6 +476,85 @@ footer > section:nth-of-type(2) > form label {
     background-color: #268281;
 }
 
+footer > section:last-child {
+    font-size: 1.3em;
+    color: #268281;
+    text-transform: uppercase;
+    margin: 2em 0;
+}
+
+footer > section:last-child div {
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+footer > section:last-child address {
+    display: grid;
+    grid: 1fr 1fr;
+    grid-gap: 0.5em;
+    justify-content: center;
+}
+
+footer > section:last-child span:nth-child(1) {
+    display: block;
+    grid-column: 1 / 2;
+}
+
+footer > section:last-child span:nth-child(2) {
+    display: block;
+    grid-column: 2 / 3;
+}
+
+footer > section:last-child span:nth-child(3) {
+    display: block;
+    grid-column: 1 / 3;
+    grid-row: 2;
+    text-align: center;
+}
+
+footer > section:last-child a{
+    color: #268281;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+footer > section:last-child a:hover {
+    text-shadow: 1px 1px 2px #9ce7a2;
+}
+
+footer > section:last-child .phone-number a:before {
+    content: url('../images/icon-phone.svg');
+    display: inline-block;
+    width: 1em;
+    margin: 0 0.6em;
+}
+
+footer > section:last-child .email a:before {
+    content: url('../images/icon-mail.svg');
+    display: inline-block;
+    width: 1.5em;
+    margin: 0 0.3em;
+}
+
+footer > section:last-child .address b:before {
+    content: url('../images/icon-address.svg');
+    display: inline-block;
+    width: 0.7em;
+    margin: 0 0.3em;
+}
+
+footer > section:last-child .country {
+    color: #FF001B;
+}
+
+footer > section:last-child .country:before {
+    content: url('../images/icon-canada.svg');
+    display: inline-block;
+    width: 1em;
+    margin: 0 0.3em;
+    filter: drop-shadow(0.1em 0.1em 0.2em #FF001B);
+}
+
 /*-END section subscribe*/
 /*END footer*/
 
