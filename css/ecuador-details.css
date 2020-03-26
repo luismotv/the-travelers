@@ -230,9 +230,7 @@ main > section:nth-of-type(5) > form > table tr:nth-of-type(8) input {
 /*--BEGIN what are your thoughts*/
 
 /*--BEGIN traveler type*/
-main > section:nth-of-type(5) > form > table tr:nth-of-type(10) {
- 
-}
+
 main > section:nth-of-type(5) > form > table tr:nth-of-type(10) td {
     position: relative;
 }
