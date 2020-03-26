@@ -322,8 +322,8 @@ main > section:nth-of-type(5) > form > table tr:nth-of-type(14) td{
 
 main > section:nth-of-type(5) > form > table tr:nth-of-type(14) td:after {
   content: url('../images/icon-upload.svg') ' Pick one photo';
-  color: #fff;
-  background-color: red;
+  color: #268281;
+  background-color: #9ce7a2;
   position: relative;
   left: 25%;
   display: block;
@@ -332,9 +332,15 @@ main > section:nth-of-type(5) > form > table tr:nth-of-type(14) td:after {
   z-index: 1;
   padding-top: 0.3em;
   padding-left: 0.2em;
+  border: 2px solid #fff;
   border-radius: 0.3em;
   width: 60%;
 }
+
+/*main > section:nth-of-type(5) > form > table tr:nth-of-type(14) td:after:hover {
+  color: #9ce7a2;
+  background-color: #268281;
+}*/
 
 main > section:nth-of-type(5) > form > table tr:nth-of-type(14) label {
     color: #fff;
@@ -366,5 +372,33 @@ main > section:nth-of-type(5) > form > table tr:nth-of-type(14) input:hover {
 /*END upload photo*/
 
 /*-END section share your experience*/
+
+/*-BEGIN submit button*/
+main > section:nth-of-type(5) > form > table tr:last-child button {
+  background-color: #9ce7a2;
+  border: 2px solid #268281;
+  border-radius: 0.3em;
+  position: relative;
+  padding-bottom: 0.5em;
+}
+
+main > section:nth-of-type(5) > form > table tr:last-child button:hover{
+  cursor: pointer;
+  width: 110%;
+  height: 110%;
+}
+
+main > section:nth-of-type(5) > form > table tr:last-child button img {
+  position: relative;
+  top: 0.4em;
+}
+
+main > section:nth-of-type(5) > form > table tr:last-child button:after {
+  content: 'SUBMIT';
+  color:#268281;
+  font-weight: 600;
+  padding: 0.5em;
+}
+/*-END submit button*/
 
 /*END form*/
