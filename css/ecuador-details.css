@@ -1,0 +1,370 @@
+h2, h3, h4 {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  color: #268281;
+  padding: 1em 0 0.2em 0;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-align: left;
+}
+
+h3{
+  font-size: 1.5em;
+  margin-left: 1em;
+  color: #6bbe43;
+  background: linear-gradient(45deg, rgba(256, 256, 256, 0), rgba(256, 256, 256, 1)), url('../images/pattern.svg');
+  padding: 0.5em;
+  width: 95%;
+}
+
+h4 {
+  font-size: 1.5em;
+  margin-left: 1em;
+  color: #6bbe43;
+  padding: 0.5em;
+  width: 95%;
+  border-top: 2px solid #6bbe43;
+  border-bottom: 2px solid #6bbe43;
+}
+
+p {
+  font-size: 1.2em;
+  text-align: justify;
+  line-height: 1.5em;
+  padding-bottom: 0.5em;
+}
+
+section > article {
+  margin-bottom: 1.5em;
+}
+
+.list-gallery {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.2em;
+}
+
+.list-gallery > li > a{
+  position: relative;
+  display: block;
+}
+
+.list-gallery > li > a:after{
+  content: url('../images/camera-icon.png');
+  position: absolute;
+  top: 80%;
+  left: 1%;
+}
+
+.list-gallery > li img:hover{
+  filter: brightness(0.8) blur(1px);
+}
+
+.list-gallery > li img {
+  width: 100%;
+}
+
+main > section > article{
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 40% 55%; 
+}
+
+main > section > article > h3 {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+main > section > article > .info {
+  grid-column: 1 / 2;
+  grid-row: 2;
+  margin-left: 2em;
+}
+
+main > section > article ul {
+  font-size: 1.2em;
+  text-align: justify;
+  line-height: 1.5em;
+  margin-left: 2em;
+}
+
+main > section > article > .media {
+  grid-column: 2 / 3; 
+  grid-row: 2;
+}
+
+main > section > article > .media img {
+  max-width: 90%;
+}
+
+main > section > article > .video {
+  grid-column: 1 / 3; 
+  grid-row: 3;
+}
+
+main > section > article > .video video {
+  max-width: 100%;
+}
+
+/*BEGIN form*/
+
+/*-BEGIN section share your experience*/
+main > section:nth-of-type(5) > h3{
+  margin-bottom: 1em;
+}
+
+main > section:nth-of-type(5) h4 {
+  margin: 1em 0;
+  text-align: center;
+}
+
+main > section:nth-of-type(5) > form > table {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  margin: 0 auto;
+}
+
+main > section:nth-of-type(5) > form > table tr:nth-of-type(1),
+main > section:nth-of-type(5) > form > table tr:nth-of-type(4), 
+main > section:nth-of-type(5) > form > table tr:nth-of-type(5), 
+main > section:nth-of-type(5) > form > table tr:nth-of-type(6),
+main > section:nth-of-type(5) > form > table tr:nth-of-type(8),
+main > section:nth-of-type(5) > form > table tr:nth-of-type(10){
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 0.5em;
+  position: relative;
+}
+
+main > section:nth-of-type(5) > form > table tr:nth-of-type(2),
+main > section:nth-of-type(5) > form > table tr:nth-of-type(12),
+main > section:nth-of-type(5) > form > table tr:nth-of-type(13),
+main > section:nth-of-type(5) > form > table tr:nth-of-type(14),
+main > section:nth-of-type(5) > form > table tr:nth-of-type(15){
+  display: flex;
+  margin-bottom: 0.5em;
+  position: relative;
+}
+
+main > section:nth-of-type(5) > form > table th {
+  text-align: right;
+}
+
+main > section:nth-of-type(5) > form > table th > label {
+  background-color: #268281;
+  color: #fff;
+}
+
+main > section:nth-of-type(5) > form > table tr:nth-of-type(1) > td{
+  margin-right: 0.2em;
+}
+
+main > section:nth-of-type(5) > form > table tr:nth-of-type(1) > th > label,
+main > section:nth-of-type(5) > form > table tr:nth-of-type(2) > th > label{
+  padding: 0.3em;
+  text-align: right;
+  position: relative;
+  top: 0.3em;
+}
+
+main > section:nth-of-type(5) > form > table tr:nth-of-type(1) > td > input,
+main > section:nth-of-type(5) > form > table tr:nth-of-type(2) > td > input{
+  padding: 0.2em;
+  padding-bottom: 0.3em;
+}
+
+main > section:nth-of-type(5) > form > table tr:nth-of-type(2) > td > input {
+  width: 10.5em;
+}
+/*--BEGIN best time to travel*/
+
+main > section:nth-of-type(5) > form > table tr:nth-of-type(4) td,
+main > section:nth-of-type(5) > form > table tr:nth-of-type(5) td,
+main > section:nth-of-type(5) > form > table tr:nth-of-type(6) td{
+  width: 3.5rem;
+  height: 1.5rem;
+  background-color: #268281;
+  position: relative;
+  box-shadow: 2px 2px 1px 1px #ccc;
+}
+
+main > section:nth-of-type(5) > form > table tr:nth-of-type(4) td label,
+main > section:nth-of-type(5) > form > table tr:nth-of-type(5) td label,
+main > section:nth-of-type(5) > form > table tr:nth-of-type(6) td label{
+  color: #fff;
+  padding: 0.2em;
+  padding-left: 1.4em;
+  padding-right: 0.8em;
+}
+
+main > section:nth-of-type(5) > form > table tr:nth-of-type(4) td input,
+main > section:nth-of-type(5) > form > table tr:nth-of-type(5) td input,
+main > section:nth-of-type(5) > form > table tr:nth-of-type(6) td input{
+  position: absolute;
+  top: 15%;
+  margin-left: 0.2em;
+  
+}
+
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 3px #9ce7a2;
+}
+/*--END best time to travel*/
+
+/*--BEGIN what are your thoughts*/
+main > section:nth-of-type(5) > form > table tr:nth-of-type(8) span{
+  text-transform: uppercase;
+  background-color: #268281;
+  color: #fff;
+  padding: 0.3em;
+  border-radius: 0.3em;
+  margin: 0 0.3em;
+}
+
+main > section:nth-of-type(5) > form > table tr:nth-of-type(8) input {
+  position: relative;
+  top: 0.7em; 
+}
+/*--BEGIN what are your thoughts*/
+
+/*--BEGIN traveler type*/
+
+main > section:nth-of-type(5) > form > table tr:nth-of-type(10) td {
+    position: relative;
+}
+
+main > section:nth-of-type(5) > form > table tr:nth-of-type(10) td input,
+main > section:nth-of-type(5) > form > table tr:nth-of-type(10) td label{
+  display: inline-block;
+}
+
+
+main > section:nth-of-type(5) > form > table tr:nth-of-type(10) td label {
+  background-color: #268281;
+  padding: 0.3em;
+  color: #fff;
+  margin-right: 0.3em;
+  padding-left: 1.2em;
+  padding-right: 0.5em;
+  border-radius: 0.3em;
+}
+
+main > section:nth-of-type(5) > form > table tr:nth-of-type(10) td input {
+  position: absolute;
+  top: 30%;
+  left: 2.5%;
+}
+/*--END traveler type*/
+
+/*--BEGIN visited cities*/
+main > section:nth-of-type(5) > form > table select {
+  display: block;
+  box-sizing: border-box;
+  width: 18rem;
+  font-size: 1.1em;
+  border: 3px solid #9ce7a2;
+  border-radius: 0.3em;
+}
+
+main > section:nth-of-type(5) > form > table select option {
+  padding:0.3em 0.5em;
+  text-align: center;
+  background-color: #268281;
+  color: #fff;
+}
+
+main > section:nth-of-type(5) > form > table select option:hover {
+  background-color: #9CE7A2;
+  color: #268281;
+}
+
+/*--END visited cities*/
+
+/*--BEGIN comments*/
+main > section:nth-of-type(5) > form > table tr:nth-of-type(13){
+  margin-top: 1.3em;
+  margin-bottom: 1.5em;
+}
+
+main > section:nth-of-type(5) > form > table tr:nth-of-type(13) label {
+   color: #268281;
+  font-size: 1.2em;
+}
+
+main > section:nth-of-type(5) > form > table tr:nth-of-type(13) label:after {
+  content: url('../images/comment-bubble.svg');
+  filter: drop-shadow(0.1em 0.1em 2px #9ce7a2);
+}
+
+main > section:nth-of-type(5) > form > table tr:nth-of-type(13) textarea {
+  border: 2px solid #9ce7a2;
+  border-radius: 0.3em;
+  height: 100%;
+}
+/*--END comments*/
+
+/*--BEGIN upload photo*/
+main > section:nth-of-type(5) > form > table tr:nth-of-type(14){
+   background-color: #268281;  
+  border-radius: 0.3em;
+  padding: 0.3em;
+  max-width: 615px;
+  overflow: hidden;
+}
+
+main > section:nth-of-type(5) > form > table tr:nth-of-type(14) td{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+main > section:nth-of-type(5) > form > table tr:nth-of-type(14) td:after {
+  content: url('../images/icon-upload.svg') ' Pick one photo';
+  color: #fff;
+  background-color: red;
+  position: relative;
+  left: 25%;
+  display: block;
+  grid-row: 1;
+  grid-column: 2 / 3;
+  z-index: 1;
+  padding-top: 0.3em;
+  padding-left: 0.2em;
+  border-radius: 0.3em;
+  width: 60%;
+}
+
+main > section:nth-of-type(5) > form > table tr:nth-of-type(14) label {
+    color: #fff;
+    padding: 0.3em;
+    letter-spacing: 0.15em;
+  grid-row: 1;
+  grid-column: 1 / 2;
+  position: relative;
+  top: 18%;
+}
+
+main > section:nth-of-type(5) > form > table tr:nth-of-type(14) input {
+    color: #fff;
+    padding: 0.3em;
+    letter-spacing: 0.15em;
+  font-size: 0.9em;
+  position: relative;
+  left: 25%;
+  grid-row: 1;
+  grid-column: 2 / 3;
+  opacity: 0;
+  z-index: 2;
+  height: 34px;
+}
+
+main > section:nth-of-type(5) > form > table tr:nth-of-type(14) input:hover {
+  cursor: pointer;
+}
+/*END upload photo*/
+
+/*-END section share your experience*/
+
+/*END form*/

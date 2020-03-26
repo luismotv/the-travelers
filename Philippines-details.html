@@ -12,13 +12,15 @@
 
 <body>
     <header>
-        <h1 id="main-title">Travelers</h1>
+        <h1 id="main-title">Travelers - Philippines</h1>
 
         <!-- breadcrumbs navigation -->
-        <nav>
-            > &nbsp;
-            <a href="index.html">Home</a> &nbsp;&nbsp;>
-            <a href="Philippines.html">Philippines</a> &nbsp;&nbsp;>
+        <nav id="breadcrumbs">
+            <span class="breadcrumb-symbol"> > </span> &nbsp;
+            <a href="index.html">Home</a>
+            <span class="breadcrumb-symbol"> > </span> &nbsp;
+            <a href="Philippines.html">Philippines</a>
+            <span class="breadcrumb-symbol"> > </span> &nbsp;
             <a href="Philippines-details.html">More about the Philippines</a>
         </nav>
         <br>
@@ -27,36 +29,17 @@
         <nav id="main-menu">
             <button type="button">Menu</button>
             <ul>
-                <li><a href="Ecuador.html">Ecuador</a></li>
+                <li><a href="ecuador.html">Ecuador</a></li>
                 <li><a href="Philippines.html">Philippines</a></li>
                 <li><a href="SouthKorea.html">South Korea</a></li>
                 <li><a href="Turkey.html">Turkey</a></li>
                 <li><a href="vietnam.html">Vietnam</a></li>
             </ul>
         </nav>
-        <!-- BEGIN Logo -->
-        <div>
-            <a href="index.html"><img src="./images/Philippines/logo-travelers.png" alt=""></a>
-        </div>
-        <!-- END Logo -->
 
-        <nav id="secondary-menu">
-            <!-- second menu with search, help and share options -->
-            <ul>
-                <li>
-                    <form>
-                        <a href="#">Search</a>
-                        <input type="search" size="10">
-                    </form>
-                </li>
-                <li>
-                    <a href="#">Help</a>
-                </li>
-                <li>
-                    <a href="#">Share</a>
-                </li>
-            </ul>
-        </nav>
+        <div id="main-logo">
+            <a href="index.html"><img src="./images/logo-travelers.png" alt=""></a>
+        </div>
 
         <section id="subscription">
             <form name="subscription">
@@ -69,8 +52,8 @@
                 <input value="Log In" type="submit">
             </form>
         </section>
-    </header>
 
+    </header>
     <div>
         <!-- banner recommended width: 1920 -->
         <ul>
@@ -283,7 +266,7 @@
             </article>
         </section>
 
-        <!-- feedback fromm user form -->
+        <!-- feedback from user form -->
         <section>
             <h3>Share your experience</h3>
             <form method="get" name="user-feedback" action="process-form.html">

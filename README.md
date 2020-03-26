@@ -34,6 +34,31 @@ Humber College - Web Programming and Design - ITC-5103-0NB - Team Traveler: phas
         -  "position: absolute" will make the element to 
 
 
+
+#Changes 2020-03-25
+
+    - "<tr><th colspan="6"><h3>Traveler type:</h3> </th></tr>"
+        - around line 359.
+        - update the HTML by adding an "h3" tag as showed above.
+
+    - "<th colspan="6"><h4>Best time of the year to travel</h4></th>"
+        - around line 296
+        - update the HTML by changing from an "h3" tag to an "h4" tag as showed above.
+
+    - "<th colspan="6"><h4>What are your thoughts?</h4></th>"
+        - around line 353
+        - update the HTML by changing from an "h3" tag to an "h4" tag as showed above.
+
+    - "<th><h4>Visited cities</h4></th>"
+        - around line 385
+        - update the HTML by changing from an "h3" tag to an "h4" tag as showed above.
+
+    - "<td colspan="5"><input type="email" name="email" placeholder="yourmail@yourdomain.com"></td>"
+        - around line 293
+        - update the HTML by adding the attribute "placeholder" as showed above.
+
+
+
 #Resources
 
 Style a table -> https://www.w3schools.com/css/css_table.asp
