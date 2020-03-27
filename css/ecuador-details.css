@@ -82,6 +82,19 @@ main > section > article > .info {
   margin-left: 2em;
 }
 
+/*-BEGIN switch the order of the elements in the articles if they are odd*/
+main > section > article:nth-child(odd) > .info {
+  grid-column: 2 / 3;
+  grid-row: 2;
+  margin-left: 2em;
+}
+
+main > section > article:nth-child(odd) > .media {
+  grid-column: 1 / 2; 
+  grid-row: 2;
+}
+/*-END switch the order of the elements in the articles if they are odd*/
+
 main > section > article ul {
   font-size: 1.2em;
   text-align: justify;

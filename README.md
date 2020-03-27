@@ -37,6 +37,8 @@ Humber College - Web Programming and Design - ITC-5103-0NB - Team Traveler: phas
 
 #Changes 2020-03-25
 
+    In the ...-details.html page:
+
     - "<tr><th colspan="6"><h3>Traveler type:</h3> </th></tr>"
         - around line 359.
         - update the HTML by adding an "h3" tag as showed above.
@@ -56,6 +58,27 @@ Humber College - Web Programming and Design - ITC-5103-0NB - Team Traveler: phas
     - "<td colspan="5"><input type="email" name="email" placeholder="yourmail@yourdomain.com"></td>"
         - around line 293
         - update the HTML by adding the attribute "placeholder" as showed above.
+
+    
+    In the index.html page:
+
+    - "<div class="phone-number">
+					<p>Call <a href="tel:+6494452687">445-2663</a> For support </p>
+				</div>
+				
+				<address>
+					<span class="email">Write us to <a href="mailto:info@thetravelers.com">The Travelers</a></span>
+					<span class="address">Visit us at: <b>123 Bloor Street, ON Box 564</b></span>
+					<span class="country">Canada</span>
+				</address>"
+        - around line 208
+        - replace all the HTML between the "section" tags with the code above.
+
+    In the main country.html page:
+
+    - "<section id="country-details-menu">"
+    - around line 147, where the menu of each country is.
+    - add an "id" attribute to the "section" tag as above. 
 
 
 
