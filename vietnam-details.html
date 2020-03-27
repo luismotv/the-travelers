@@ -4,21 +4,28 @@
 
 <head>
     <title>The Travelers - Vietnam</title>
-
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/vietnam.css">
+    <link rel="stylesheet" href="css/details.css">
+    <link rel="stylesheet" href="css/vietnam-details.css">
+    
 </head>
 
 <body>
     <header>
-        <h1 id="main-title">Travelers</h1>
-        <nav>
-            > &nbsp; 
-            <a href="index.html">Home</a>
-            &nbsp;&nbsp;>
-            <a href="vietnam.html">Vietnam</a>
-            &nbsp;&nbsp;>
-            <a href="vietnam-details.html">More about Vietnam</a>
-        </nav>
-        <br>
+        <h1 id="main-title">Travelers Vietnam</h1>
+			<!-- breadcrumbs navigation -->
+            <nav id="breadcrumbs">
+				<span class="breadcrumb-symbol"> > </span> &nbsp; 
+				<a href="index.html">Home</a>
+				<span class="breadcrumb-symbol"> > </span> &nbsp;
+                <a href="vietnam.html">Vietnam</a>
+                <span class="breadcrumb-symbol"> > </span> &nbsp;
+				<a href="vietnam-details.html">More about Vietnam</a>
+			</nav>
+
+			
         <!-- First menu with main navigation -->
         <nav id="main-menu">
             <button type="button">Menu</button>
@@ -31,27 +38,10 @@
             </ul>
         </nav>
         <!-- BEGIN Logo -->
-        <div>
+        <div id="main-logo">
             <a href="index.html"><img src="images/logo-travelers.png" alt=""></a>
         </div>
         <!-- END Logo -->
-        <nav id="secondary-menu">
-            <!-- second menu with search, help and share options -->
-            <ul>
-                <li>
-                    <form>
-                        <a href="#">Search</a>
-                        <input type="search" size="10">
-                    </form>
-                </li>
-                <li>
-                    <a href="#">Help</a>
-                </li>
-                <li>
-                    <a href="#">Share</a>
-                </li>
-            </ul>
-        </nav>
 
         <section id="subscription">
             <form name="subscription">
@@ -63,10 +53,11 @@
 
                 <input value="Log In" type="submit">
             </form>
-        </section>
+        </section><br>
     </header>
-    <div>
-        <!-- banner recommended width: 1920 -->
+
+    <div id="banner-slider">
+        
         <ul>
             <li><img src="./images/vietnam/saigon-ho-chi-minh-city-vietnam-5c489f50c9e77c000112d22b.jpg" width="720px"></li>
             <li><img src="./images/vietnam/hanoi2.jpg" width="720px"></li>
@@ -82,199 +73,291 @@
             <h2>Places to go</h2>
             <article>
                 <h3>Halong Bay</h3>
-                <p>The karst seascape of Halong Bay is one of the world's most spellbinding sea views and is a UNESCO World Heritage Site. Thousands of limestone islands sit within this bay in the Gulf of Tonkin, eroded into jagged pinnacles by wind and
-                    water action over millennia. With the bay's scenery best seen by boat, this is prime cruising territory. Opt for at least an overnight tour to see Halong Bay's iconic views as a day trip doesn't do it justice. There are plenty of caves
-                    in the bay that can be entered including the Hang Sung Sot, with three mammoth caverns, and the Hang Dao Go, with superbly weird stalagmites and stalactites. For most people though, the highlight is simply cruising amid the karsts
-                    and soaking up the changing scenery of pinnacles as you pass by.
-                    <a href="https://www.planetware.com/tourist-attractions/vietnam-vie.htm">Click Here</a>
-                </p>
+                <div class="info">
+                    <p>The karst seascape of Halong Bay is one of the world's most spellbinding sea views and is a UNESCO World Heritage Site. Thousands of limestone islands sit within this bay in the Gulf of Tonkin, eroded into jagged pinnacles by wind and
+                        water action over millennia. With the bay's scenery best seen by boat, this is prime cruising territory. Opt for at least an overnight tour to see Halong Bay's iconic views as a day trip doesn't do it justice. There are plenty of caves
+                        in the bay that can be entered including the Hang Sung Sot, with three mammoth caverns, and the Hang Dao Go, with superbly weird stalagmites and stalactites. For most people though, the highlight is simply cruising amid the karsts
+                        and soaking up the changing scenery of pinnacles as you pass by.
+                        <a href="https://www.planetware.com/tourist-attractions/vietnam-vie.htm">Click Here</a>
+                    </p>
+                </div>
 
-                <img src="./images/vietnam/Halong-Bay-Vietnam-b505ffb19891.jpg" width="720px">
+                <div class="media">
+                    <img src="./images/vietnam/Halong-Bay-Vietnam-b505ffb19891.jpg" width="720px">
+                </div>
             </article>
-            <br><br>
+            
             <article>
                 <h3>Saigon</h3>
-                <p>For big city fans, no visit to Vietnam is really complete without a visit to Ho Chi Minh City, the buzzing and crazy commercial hub of the country. The streets are an insane clog of motorbikes and cars, the restaurant and cafe scene is
-                    incredibly cosmopolitan, and the shopping is the best you'll find in the country. At its center is Dong Khoi, a relatively small and easily navigable central district, which holds most of the city's sights. Here, you'll find the HCMC
-                    Museum, with a brilliant collection of artefacts that weaves together the story of the city, and the grand Notre Dame Cathedral, built in the late 19th century. Check out the old district of Da Kao nearby for some of the best surviving
-                    examples of the city's French colonial architecture and also to visit the Jade Emperor Pagoda with its dazzling array of Buddhist and Taoist religious iconography. Afterwards, the History Museum is a must-do for history fans with stacks
-                    of relics on display from various archaeological sites. <br> For many visitors, the two big hitter attractions not to miss are just a little out of the center, along Nguyen Thi Minh Khai Street. The Reunification Palace, then known
-                    as Independence Palace, was the residence for South Vietnam's president. It's chiefly famous as the spot where North Vietnam's tanks stopped on 30 April 1975, officially ending the war. It's a completely fascinating place to visit
-                    complete with 1960s furnishings still in situ. Nearby is the War Remnants Museum, which although very obviously biased, paints a disturbing picture of the brutality of war and the many atrocities committed by US Forces during their
-                    Vietnam campaign.</p>
-                <img src="./images/vietnam/saigon.jpg" width="720px"><br>
-                <img src="./images/vietnam/Notre-Dame-Cathedral.jpg" width="720px"><br>
+                <div class="info">
+                    <p>For big city fans, no visit to Vietnam is really complete without a visit to Ho Chi Minh City, the buzzing and crazy commercial hub of the country. The streets are an insane clog of motorbikes and cars, the restaurant and cafe scene is
+                        incredibly cosmopolitan, and the shopping is the best you'll find in the country. At its center is Dong Khoi, a relatively small and easily navigable central district, which holds most of the city's sights. Here, you'll find the HCMC
+                        Museum, with a brilliant collection of artefacts that weaves together the story of the city, and the grand Notre Dame Cathedral, built in the late 19th century. Check out the old district of Da Kao nearby for some of the best surviving
+                        examples of the city's French colonial architecture and also to visit the Jade Emperor Pagoda with its dazzling array of Buddhist and Taoist religious iconography. Afterwards, the History Museum is a must-do for history fans with stacks
+                        of relics on display from various archaeological sites. <br> For many visitors, the two big hitter attractions not to miss are just a little out of the center, along Nguyen Thi Minh Khai Street. The Reunification Palace, then known
+                        as Independence Palace, was the residence for South Vietnam's president. It's chiefly famous as the spot where North Vietnam's tanks stopped on 30 April 1975, officially ending the war. It's a completely fascinating place to visit
+                        complete with 1960s furnishings still in situ. Nearby is the War Remnants Museum, which although very obviously biased, paints a disturbing picture of the brutality of war and the many atrocities committed by US Forces during their
+                        Vietnam campaign.</p>
+                </div>
+
+                <ul class="list-gallery">
+                    <li><a href="./images/vietnam/saigon.jpg" target="_blank"><img src="./images/vietnam/saigon.jpg"></a></li>
+                    <li><a href="./images/vietnam/Notre-Dame-Cathedral.jpg" target="_blank"><img src="./images/vietnam/Notre-Dame-Cathedral.jpg"></a></li>
+                </ul>
             </article>
-            <br><br>
+            
             <article>
                 <h3>Hanoi</h3>
-                <p>Capital of Vietnam <br> Hanoi, the capital of Vietnam, is known for its centuries-old architecture and a rich culture with Southeast Asian, Chinese and French influences. At its heart is the chaotic Old Quarter, where the narrow streets
-                    are roughly arranged by trade. There are many little temples, including Bach Ma, honoring a legendary horse, plus Đồng Xuân Market, selling household goods and street food. Other landmarks include One Pillar Pagoda, a tiny temple atop
-                    a stone pillar, and the 11th-century Temple of Literature, once home to a Confucian academy. French colonial buildings dot the city, from the neoclassical Opera House to the Gothic Revival St. Joseph’s Cathedral. The mausoleum of Communist
-                    leader Ho Chi Minh and a museum at Hoa Lo Prison (also known as the Hanoi Hilton, which held prisoners of war) recall the Vietnam War. Cultural activities range from tai chi martial arts around Hoàn Kiếm Lake to traditional chamber
-                    music and water puppetry</p>
-                <p>For more information, <a href="http://www.vietnam-guide.com/hanoi/">Click Here.</a> </p>
-                <img src="./images/vietnam/hanoi2.jpg" width="720px">
-                <img src="./images/vietnam/hanoi3.jpg" width="720px">
+                <div class="info">
+                    <p>Capital of Vietnam <br> Hanoi, the capital of Vietnam, is known for its centuries-old architecture and a rich culture with Southeast Asian, Chinese and French influences. At its heart is the chaotic Old Quarter, where the narrow streets
+                        are roughly arranged by trade. There are many little temples, including Bach Ma, honoring a legendary horse, plus Đồng Xuân Market, selling household goods and street food. Other landmarks include One Pillar Pagoda, a tiny temple atop
+                        a stone pillar, and the 11th-century Temple of Literature, once home to a Confucian academy. French colonial buildings dot the city, from the neoclassical Opera House to the Gothic Revival St. Joseph’s Cathedral. The mausoleum of Communist
+                        leader Ho Chi Minh and a museum at Hoa Lo Prison (also known as the Hanoi Hilton, which held prisoners of war) recall the Vietnam War. Cultural activities range from tai chi martial arts around Hoàn Kiếm Lake to traditional chamber
+                        music and water puppetry</p>
+                    <p>For more information, <a href="http://www.vietnam-guide.com/hanoi/">Click Here.</a> </p>
+                </div>
+
+                <ul class="list-gallery">
+                    <li><a href="./images/vietnam/hanoi2.jpg"" target="_blank"><img src="./images/vietnam/hanoi2.jpg"></a></li>
+                    <li><a href="./images/vietnam/hanoi3.jpg"" target="_blank"><img src="./images/vietnam/hanoi3.jpg"></a></li>
+                </ul>
+
             </article>
-            <br><br>
+            
             <article>
                 <h3>Da Nang</h3>
+               <div class="info">
                 <p>Da Nang marks the halfway point between the capital in the north, Hanoi, and Ho Chi Minh City in the south. It’s the fourth largest city in Vietnam. Apart from some shopping highlights and historical sights, the main reason for most travellers
-                    staying here is its proximity to the well-known My Khe Beach, Lang Co Beach, Hoi An and My Son. <br> Lang Co Beach is lined with palm trees, the water of the nearby ocean crystal-clear and enticing, lapping onto white sand. It is a
+                    staying here is its proximity to the well-known My Khe Beach, Lang Co Beach, Hoi An and My Son. </p> 
+                    <p>Lang Co Beach is lined with palm trees, the water of the nearby ocean crystal-clear and enticing, lapping onto white sand. It is a
                     peninsula with a sparkling lagoon on one side, and the beach on the other. The area is fairly under-developed, although recent years have seen many new hotels opening. My Khe Beach is more developed, since it was a popular spot for
                     American soldiers seeking R&R during the Vietnam-US War. Water sport activities here are in abundance, and it can get very crowded over weekends and holidays. Da Nang’s coastline stretches 30 kilometres, renowned for calm, cool waters
                     and also popular for fishing, water-skiing, diving, and yachting.</p>
                 <p>For more information, <a href="http://www.vietnam-guide.com/da-nang/">Click Here.</a> </p>
-                <img src="./images/vietnam/danang.jpg" width="720px">
-                <img src="./images/vietnam/304MeliaDanang-Infinity_Pool.jpg" width="720px">
+               </div>
+
+               <ul class="list-gallery">
+                   <li><a href="./images/vietnam/danang.jpg" target="_blank"><img src="./images/vietnam/danang.jpg"></a></li>
+                   <li><a href="./images/vietnam/304MeliaDanang-Infinity_Pool.jpg" target="_blank"><img src="./images/vietnam/304MeliaDanang-Infinity_Pool.jpg"></a></li>
+               </ul>
+                
             </article>
             <article>
                 <h3>Sapa</h3>
-                <p>Sapa is a small, mountain town in Lao Cai Province. It is located about 350 km northwest of Hanoi, close to the Chinese border. Here's where you'll find the Hoang Lien Son range of mountains, which includes Fan Si Pan—the country's highest
-                    peak. This quiet Vietnamese town is home to different ethnic tribal groups. There are five main ethnic groups in Sapa: the Hmong, Dao, Tay, Giay and Xa Pho. It is said that Sapa was first occupied by the first four groups, since the
-                    Vietnamese from the lowlands (better known as the Kinh) did not colonise the highest valleys. These days, Sapa welcomes a diverse range of visitors, attracted by the highland tribes, iconic rice paddies and forest treks. The whole
-                    area is blessed with awe-inspiring natural beauty. </p>
-                <p>For more information, <a href="http://www.vietnam-guide.com/sapa/">Click Here.</a> </p>
-                <img src="./images/vietnam/sapa.jpg" width="720px">
-                <img src="./images/vietnam/sapa-trekking-valley-vietnam.jpg">
+                <div class="info">
+                    <p>Sapa is a small, mountain town in Lao Cai Province. It is located about 350 km northwest of Hanoi, close to the Chinese border. Here's where you'll find the Hoang Lien Son range of mountains, which includes Fan Si Pan—the country's highest
+                        peak. This quiet Vietnamese town is home to different ethnic tribal groups. There are five main ethnic groups in Sapa: the Hmong, Dao, Tay, Giay and Xa Pho. It is said that Sapa was first occupied by the first four groups, since the
+                        Vietnamese from the lowlands (better known as the Kinh) did not colonise the highest valleys. These days, Sapa welcomes a diverse range of visitors, attracted by the highland tribes, iconic rice paddies and forest treks. The whole
+                        area is blessed with awe-inspiring natural beauty. </p>
+                    <p>For more information, <a href="http://www.vietnam-guide.com/sapa/">Click Here.</a> </p>
+                </div>
+
+                <ul class="list-gallery">
+                    <li><a href="./images/vietnam/sapa.jpg" target="_blank"><img src="./images/vietnam/sapa.jpg"></a></li>
+                    <li><a href="./images/vietnam/sapa-trekking-valley-vietnam.jpg" target="_blank"><img src="./images/vietnam/sapa-trekking-valley-vietnam.jpg"></a></li>
+                </ul>
             </article>
-            <br><br>
+            
         </section>
         <br><br>
         <section id="foods">
             <h2>Foods</h2>
             <article>
                 <h3>Phở</h3>
-                <p>Phở was born in Northern Vietnam during the mid-1880s. The dish was heavily influenced by both Chinese and French cooking. Rice noodle and spices were imported from China; the French popularized the eating of red meat. In fact, it is believed
-                    that "phở" is derived from "pot au feu" a French soup. Vietnamese cooks blended the Chinese, French and native influences to make a dish that is uniquely Vietnamese.<br><br>
-
-                    <strong>From North to South <br></strong> The popularity of pho spread southwards starting in 1954 when the country was divided into North and South Vietnam. As the dish moved south, cooks infused it with additional ingredients until
-                    it evolved into the version that is commonly served today.<br><br>
-                    <strong>Regional Pho Variations <br></strong> The origins of pho as a Northern dish that spread South explains the key differences between the Northern and Southern variations. Northern style pho tends to be simpler and is made with
-                    less ingredients. There are fewer cuts of meat and small slices of ginger are laid on top of the soup. The pho is served without bean sprouts or herbs. Instead, it is accompanied by green chilies and lime only. Southern style pho is
-                    a complex dish made from a dozen ingredients. Bean sprouts, fresh basil and saw herb are typically served with each bowl. As with the Northern style pho, green chilies and lime are used as condiments.</p>
-                <img src="./images/vietnam/Beef-Tail-Pho-Noodles-Recipe-Phở-Đuôi-Bò.jpg">
+                <div class="info">
+                    <p>Phở was born in Northern Vietnam during the mid-1880s. The dish was heavily influenced by both Chinese and French cooking. Rice noodle and spices were imported from China; the French popularized the eating of red meat. In fact, it is believed
+                        that "phở" is derived from "pot au feu" a French soup. Vietnamese cooks blended the Chinese, French and native influences to make a dish that is uniquely Vietnamese.<br><br>
+    
+                        <strong>From North to South <br></strong> The popularity of pho spread southwards starting in 1954 when the country was divided into North and South Vietnam. As the dish moved south, cooks infused it with additional ingredients until
+                        it evolved into the version that is commonly served today.<br><br>
+                        <strong>Regional Pho Variations <br></strong> The origins of pho as a Northern dish that spread South explains the key differences between the Northern and Southern variations. Northern style pho tends to be simpler and is made with
+                        less ingredients. There are fewer cuts of meat and small slices of ginger are laid on top of the soup. The pho is served without bean sprouts or herbs. Instead, it is accompanied by green chilies and lime only. Southern style pho is
+                        a complex dish made from a dozen ingredients. Bean sprouts, fresh basil and saw herb are typically served with each bowl. As with the Northern style pho, green chilies and lime are used as condiments.</p>
+                </div>
+                <div class="media">
+                    <img src="./images/vietnam/Beef-Tail-Pho-Noodles-Recipe-Phở-Đuôi-Bò.jpg">
+                </div>
             </article>
-            <br><br>
+            
             <article>
                 <h3>Vietnamese Crepe (Banh Xeo) </h3>
+               <div class="info">
                 <p>Vietnamese Crepe is a bright yellow crispy crepe filled with shrimp, pork and vegetables. You can come across this tasty crepe either as a snack or main meal in all three regions of Vietnam.</p>
+               </div>
+                
+               <div class="media">
                 <img src="./images/vietnam/Banh_Xeo_Recipe_top.jpg">
+               </div>
             </article>
-            <br><br>
+            
             <article>
                 <h3>Hue Dishes</h3>
-                <p> <strong>Bun bo Hue</strong> </p>
+                <div class="info">
+                    <p> <strong>Bun bo Hue</strong> </p>
                 <p>Bun bo hue (Hue beef noodle soup) is a regional speciality comprising thick rice vermicelli and various toppings in a thick soup. Unlike pho, this dish is a combination of sweet, sour and spicy as it’s flavoured with boiled bones and shank,
                     annatto seeds, lemongrass, ginger, fermented shrimp paste, chilli oil, and sugar. As for the toppings, expect congealed pig blood, beef or pork knuckles, beansprouts, lime wedges, cilantro, diced green onions, banana blossoms, mint
                     and basil. You can also ramp up the spiciness by adding fresh chillies and fermented fish sauce to your bun bo hue.</p>
-                <img src="./images/vietnam/bunbo.jpg">
+                </div>
+                
+                <div class="media">
+                    <img src="./images/vietnam/bunbo.jpg">
+                </div>
             </article>
-            <br><br>
-            <p> <strong>Nem Lui (Hue Lemongrass Skewers)</strong> </p>
-            <p>Nem lui is a kebab-like dish using lemongrass stalks, which is wrapped with marinated meat (usually pork or beef) then grilled over a charcoal stove. Diners are also served with a side of rice paper, lettuce and cucumber slices, rice vermicelli,
-                and fresh herbs. It’s available as an appetiser at just about all local restaurants and hotels in Hue. For added flavour, dip nem lui into a local sauce made with ground peanuts, fermented beans, sesame seeds, shrimp paste, chopped garlic,
-                chillies and shallots.</p>
-            <img src="./images/vietnam/nemLuiHue.jpg">
+            
+            <article>
+                <h3>Nem Lui (Hue Lemongrass Skewers)</h3>
+                <div class="info">
+                    <p>Nem lui is a kebab-like dish using lemongrass stalks, which is wrapped with marinated meat (usually pork or beef)
+                        then grilled over a charcoal stove. Diners are also served with a side of rice paper, lettuce and cucumber
+                        slices, rice vermicelli,
+                        and fresh herbs. It’s available as an appetiser at just about all local restaurants and hotels in Hue. For added
+                        flavour, dip nem lui into a local sauce made with ground peanuts, fermented beans, sesame seeds, shrimp paste,
+                        chopped garlic,
+                        chillies and shallots.</p>
+                </div>
+                <div class="media">
+                    <img src="./images/vietnam/nemLuiHue.jpg">
+                </div>
             </article>
-            <br><br>
-            <p> <strong>Com Hen (Clam Rice)</strong> </p>
-            <p>Com hen (clam rice) consists of rice topped with baby basket clams, crispy pork skins, roasted peanuts, shrimp paste, and fresh greens. Commonly eaten as a filling breakfast, the clams are stir-fried with chopped garlic, onion, fish sauce,
-                pepper, and mint leaves before they’re poured over a plate of steamed jasmine rice. In some restaurants, com hen is often accompanied with a bowl of clam broth as well as a platter of coriander leaves, shredded banana blossoms and bean
-                sprouts. There are plenty of food stalls in Dong Ba Market selling this Hue speciality for about VND 20,000.</p>
-            <img src="./images/vietnam/comHen.jpg">
+            
+            <article>
+                <h3>Com Hen (Clam Rice)</h3>>
+                <div class="info">
+                    <p>Com hen (clam rice) consists of rice topped with baby basket clams, crispy pork skins, roasted peanuts,
+                        shrimp paste, and fresh greens. Commonly eaten as a filling breakfast, the clams are stir-fried with chopped
+                        garlic, onion, fish sauce,
+                        pepper, and mint leaves before they’re poured over a plate of steamed jasmine rice. In some restaurants, com
+                        hen is often accompanied with a bowl of clam broth as well as a platter of coriander leaves, shredded banana
+                        blossoms and bean
+                        sprouts. There are plenty of food stalls in Dong Ba Market selling this Hue speciality for about VND 20,000.
+                    </p>
+                </div>
+                <div class="media">
+                    <img src="./images/vietnam/comHen.jpg">
+                </div>
             </article>
-            <br><br>
+            
         </section>
-        <br><br>
+        
         <section id="travelingtips">
             <h2>Traveling tips</h2>
             <article>
                 <h3>Transportation</h3>
-                <p>Bus travel is very cheap in Vietnam. The public bus around Ho Chi Minh City will cost a maximum of 4,000 VND (less than 1 USD) per ride. Overnight buses, while uncomfortable, are only about 100,000-600,000 VND (4-25 USD) and can take you
-                    to lots of cities in Vietnam (this will also save you a night of paying for accommodation). <br> For a bus from Ho Chi Minh City to neighboring Phnom Penh in Cambodia, expect to pay around 320,000 VND (15 USD) per person. The train
-                    is also another inexpensive way to travel, with the 791km long train journey from Da Nang to Hanoi costing around 750,000 VND (30 USD). There are extremely low-cost airlines that can hop you around the country quickly for as little
-                    as 600,000 VND (25 USD).</p>
+                <div class="info">
+                    <p>Bus travel is very cheap in Vietnam. The public bus around Ho Chi Minh City will cost a maximum of 4,000 VND (less than 1 USD) per ride. Overnight buses, while uncomfortable, are only about 100,000-600,000 VND (4-25 USD) and can take you
+                        to lots of cities in Vietnam (this will also save you a night of paying for accommodation). <br> For a bus from Ho Chi Minh City to neighboring Phnom Penh in Cambodia, expect to pay around 320,000 VND (15 USD) per person. The train
+                        is also another inexpensive way to travel, with the 791km long train journey from Da Nang to Hanoi costing around 750,000 VND (30 USD). There are extremely low-cost airlines that can hop you around the country quickly for as little
+                        as 600,000 VND (25 USD).</p>
+                </div>
 
-                <img src="./images/vietnam/vietnam-bus.jpg">
+                <div class="media">
+                    <img src="./images/vietnam/vietnam-bus.jpg">
+                </div>
             </article>
-            <br><br>
+            
             <article>
                 <h3>What Taxi to take</h3>
-                <p>In recent years, the taxi has become more and more popular means of transportation because of its convenient and safe. However, it is more common in urban areas due to having a higher price than other transportation methods such as “xe
-                    om” (a typical means of transportation in Vietnam including a driver who takes you to anywhere you want on a bike) or other private transportation. Basically, taxi services in Vietnam have 2 types which are official and unofficial
-                    taxi. Taxi corporations are considered as official taxi because they have a reputation and offer high quality at a good price for customers. As for unofficial ones, they belong to small and private taxi companies who have poor-quality
-                    services and offer unreliable price. These taxis also can not ensure safety for customers because the drivers usually drive cars very fast and carelessly. There are several big and well-known taxi brands in Vietnam that are highly
-                    recommended for international tourists</p>
-
-                <h4>Mai Linh Taxi</h4>
-                <p>
-                    This taxi company has a huge number of cars offering high quality and services for customers and readily serving them in many tourism destinations. They also offer various types of products that are very flexible for each target customer such as Mai Linh
-                    Limousine (Tel: 38.36.36.36) for high class, Saigon Taxi (Tel: 38.23.23.23) for customers in Saigon, etc. Mai Linh Taxi is recognized by the cover of white and green.
-                </p>
-                <img src="./images/vietnam/Mai-Linh-Taxi-in-green.jpg">
-                <h4>Vinasun Taxi</h4>
+                <div class="info">
+                    <p>In recent years, the taxi has become more and more popular means of transportation because of its convenient and safe. However, it is more common in urban areas due to having a higher price than other transportation methods such as “xe
+                        om” (a typical means of transportation in Vietnam including a driver who takes you to anywhere you want on a bike) or other private transportation. Basically, taxi services in Vietnam have 2 types which are official and unofficial
+                        taxi. Taxi corporations are considered as official taxi because they have a reputation and offer high quality at a good price for customers. As for unofficial ones, they belong to small and private taxi companies who have poor-quality
+                        services and offer unreliable price. These taxis also can not ensure safety for customers because the drivers usually drive cars very fast and carelessly. There are several big and well-known taxi brands in Vietnam that are highly
+                        recommended for international tourists</p>
+    
+                    <h4>Mai Linh Taxi</h4>
+                    <p>
+                        This taxi company has a huge number of cars offering high quality and services for customers and readily serving them in many tourism destinations. They also offer various types of products that are very flexible for each target customer such as Mai Linh
+                        Limousine (Tel: 38.36.36.36) for high class, Saigon Taxi (Tel: 38.23.23.23) for customers in Saigon, etc. Mai Linh Taxi is recognized by the cover of white and green.
+                    </p>
+                </div>
+                <div class="media">
+                    <img src="./images/vietnam/Mai-Linh-Taxi-in-green.jpg">
+                </div>
+                <div class="info">
+                    <h4>Vinasun Taxi</h4>
                 <p>
                     This is a well-known taxi brand in Ho Chi Minh City having over 3,500 cabs with high quality in services. It has the cover of white with one red strip and green strip below. (Tel: 38.27.27.27)
                 </p>
-                <img src="./images/vietnam/Vinasun-is-the-most-popular-taxi-group-in-Saigon.jpg">
+                </div>
+                
+                <div class="media">
+                    <img src="./images/vietnam/Vinasun-is-the-most-popular-taxi-group-in-Saigon.jpg">
+                </div>
 
             </article>
-            <br><br>
+            
             <article>
                 <h3>Best Season</h3>
-                <p>If you intend to see a bit of everything, you need to work around the regional weather differences. Overall, autumn (Sept-Dec) and spring (March and April) are probably the most favourable seasons if you’re planning to cover the whole
-                    country. Here is our month by month guide to visiting Vietnam. We look at detailed weather patterns and suggest how these might affect any sightseeing plans, getting around, outdoor activities, and festivals taking place throughout
-                    the year. All this will help you to work out when is the best time to travel to Vietnam. <br><br>
-                </p>
-                <img src="./images/vietnam/discover-the-beauty-of-northern-vietnam-in-autumn-1552553452.jpg" width="520">
-                <img src="./images/vietnam/dong-van-stone-plateau-ha-giang-north-vietnam-spring.jpg" width="520">
+                <div class="info">
+                    <p>If you intend to see a bit of everything, you need to work around the regional weather differences. Overall, autumn (Sept-Dec) and spring (March and April) are probably the most favourable seasons if you’re planning to cover the whole
+                        country. Here is our month by month guide to visiting Vietnam. We look at detailed weather patterns and suggest how these might affect any sightseeing plans, getting around, outdoor activities, and festivals taking place throughout
+                        the year. All this will help you to work out when is the best time to travel to Vietnam.
+                    </p>
+                </div>
+
+                <ul class="list-gallery">
+                    <li><a href="./images/vietnam/discover-the-beauty-of-northern-vietnam-in-autumn-1552553452.jpg" target="_blank"><img src="./images/vietnam/discover-the-beauty-of-northern-vietnam-in-autumn-1552553452.jpg"></a></li>
+                    <li><a href="./images/vietnam/dong-van-stone-plateau-ha-giang-north-vietnam-spring.jpg" target="_blank"><img src="./images/vietnam/dong-van-stone-plateau-ha-giang-north-vietnam-spring.jpg"></a></li>
+                </ul>
+                
             </article>
         </section>
-        <br><br>
+        
         <section id="festivals">
             <h2>Festivals</h2>
             <article>
                 <h3>Tet Nguyen Dan (Lunar New Year)</h3>
-                <b>January/February </b>
+                <div class="info">
+                    <b>January/February </b>
                 <h4>What's so good about it?</h4>
                 <p> Lunar New Year, locally called Tet, is the biggest festival of the year with the whole country downing tools for family get-togethers. Principally a religious celebration, don’t expect too much of a wild party, but it’s still a fascinating
                     time to visit Vietnam and you’ll certainly find locals lighting fireworks, visiting temples with their families, and the interesting sight of many flower stalls set up as giving flowers is customary during Tet.</p>
+                </div>
 
                 <!-- Optional Gallery -->
-                <img src="./images/vietnam/TetNguyenDan.jpg">
+                <div class="media">
+                    <img src="./images/vietnam/TetNguyenDan.jpg">
+                </div>
 
             </article>
-            <br><br>
+            
             <article>
                 <h3>Hue Festival</h3>
-                <b>April/May/June every two years </b>
+                <div class="info">
+                    <b>April/May/June every two years </b>
                 <p>Hue Festival is a biannual celebration that takes place in UNESCO-listed Hue City, where you can enjoy an array of cultural events, games, and performances held over a week. Founded in 2000, the festival was held to preserve traditional
                     customs that were practised during the Nguyen Dynasty. If you’re visiting Hue in April, May or June, expect unique showcases such as the Hue Poetry Festival, Dialogue of Drums and Percussions, and Ao Dai Fashion Shows, sporting activities
                     like kite flying, boat racing, and human chess, as well as street performances, film screenings and art exhibitions.</p>
+                </div>
 
-                <video controls width="1080">
+                <div class="media">
+                    <video controls width="960">
 						<source src="./videos/vietnam/Hue festival 2017.mp4">
 					</video>
+                </div>
                 <!-- Optional Gallery -->
             </article>
-            <br><br>
+            
             <article>
                 <h3>Perfume Festival</h3>
-                <b>Mid-February/March</b>
+                <div class="info">
+                    <b>Mid-February/March</b>
                 <p>Perfume Festival draws throngs of local pilgrims from all over Vietnam to Hanoi’s iconic Perfume Pagoda, where they to pray for a prosperous year and pay their respects to Buddha. The pilgrimage starts with a dragon dance at Den Trinh
                     Pagoda on the 15th day of the 1st Lunar, where pilgrims (and even travellers) travel by boat along the Yen River to the base of Huong Mountain, passing by limestone caves and rice fields. The journey continues on foot by climbing hundreds
                     of stone steps towards Huong Tich Cave, offering a colourful display of food offerings, statues of deities, lit incenses, and praying locals.</p>
-                <video controls width="1080">
+                </div>
+                
+                <div class="media">
+                    <video controls width="960">
 						<source src="./videos/vietnam/ParfumeFestival.mp4">
 					</video>
+                </div>
 
                 <!-- Optional Gallery -->
 
             </article>
         </section>
-        <br><br>
+        
         <!-- feedback fromm user form -->
         <section>
             <h3>Share your experience</h3>
@@ -357,7 +440,7 @@
                         </th>
                     </tr>
                     <tr>
-                        <td colspan="6">Bad<input type="range" name="" min="1" max="5" step="1">Excellent</td>
+                        <td colspan="6"><span>Bad</span><input type="range" name="" min="1" max="5" step="1"><span>Excellent</span></td>
                     </tr>
                     <tr>
                         <th colspan="6">Traveler type: </th>
@@ -420,7 +503,7 @@
 						<tr>
 						  <td colspan="6 ">
 							<button type="submit ">
-								<img src="images/submit.png " width="145 ">
+								<img src="images/icon-plane.svg">
 							</button>
 						  </td>
 						</tr>
@@ -447,63 +530,62 @@
 				<h2>Subscribe</h2>
 				
 				<form action="./index.html " method="get ">
-                <table>
-                    <tr>
-                        <td width="100 ">
-                            <label for="email ">Email:</label>
-                        </td>
-                        <td>
-                            <input type="email " name="email " id="email " required="yes " placeholder="youremail@yourdomain.com ">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="selectedcountry ">Select Coutry:</label>
-                        </td>
-                        <td> <select name="selectedcountry " width="200 ">
-                                <option value="Ecuador ">
-                                    Ecuador
-                                    </option>
-                                    <option value="South Korea ">
-                                    South Korea
-                                    </option>
-                                    <option value="Philippines ">
-                                    Philippines
-                                    </option>
-                                    <option value="Turkey ">
-                                    Turkey
-                                    </option>
-                                    <option value="Vietnam " selected="selected ">
-                                    Vietnam
-                                    </option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2 ">I want emails from the Travelers Inc. <a href="index.html ">here.</a> The Travelers <a href="index.html ">Privacy Policy.</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2 "><input type="submit " value="Subscribe "></td>
-                    </tr>
-                </table>
+                    <table>
+						<tr>
+							<td width="100">
+								<label for="email">Email:</label>
+							</td>
+							<td>
+								<input type="email" name="email" id="email" required="yes" placeholder="youremail@yourdomain.com">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="selectedcountry">Select Coutry:</label>
+	
+							</td>
+							<td> <select name="selectedcountry" width="200">
+									<option value="Ecuador">
+										Ecuador
+										</option>
+										<option value="South Korea">
+										South Korea
+										</option>
+										<option value="Philippines">
+										Philippines
+										</option>
+										<option value="Turkey">
+										Turkey
+										</option>
+										<option value="Vietnam">
+										Vietnam
+										</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">I want emails from the Travelers Inc. <a href="index.html">here.</a> The Travelers <a href="index.html">Privacy Policy.</a>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><input type="submit" value="Subscribe"></td>
+						</tr>
+					</table>
             </form>
 			</section>
 			
-			<section>
-			<!-- menu for phone number and adress -->
-				<div>
-					<p>Call <a href="tel:+6494452687 ">445-2663</a> For support. </p>
-				</div>
-				
-				<address>
-					Write us to <a href="mailto:info@thetravelers.com ">The Travelers</a>.<br>
-					Visit us at:<br>
-					123 Bloor Street, ON<br>
-					Box 564<br>
-					Canada
-				</address>
-			</section>
+            <section>
+                <!-- menu for phone number and adress -->
+                <div class="phone-number">
+                    <p>Call <a href="tel:+6494452687">445-2663</a> For support </p>
+                </div>
+            
+                <address>
+                    <span class="email">Write us to <a href="mailto:info@thetravelers.com">The Travelers</a></span>
+                    <span class="address">Visit us at: <b>123 Bloor Street, ON Box 564</b></span>
+                    <span class="country">Canada</span>
+                </address>
+            </section>
 		</footer>
 	</body>
 </html>
