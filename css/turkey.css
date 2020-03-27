@@ -165,7 +165,7 @@ main > section > article > video {
 
 #country-details-menu a:link,
 #country-details-menu a:visited,
-#country-details-menu a: hover,
+#country-details-menu a:hover,
 #country-details-menu a:active {
     text-decoration: none;
     color: #fff;
