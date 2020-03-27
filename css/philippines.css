@@ -127,3 +127,97 @@ main>section>article>video {
 #banner-slider>ul>li>img {
     width: 100%;
 }
+
+/*BEGIN country menu*/
+
+#country-details-menu {
+    display: flex;
+    justify-content: center;
+}
+
+#country-details-menu > ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#country-details-menu > ul:before {
+    content: url('../images/icon-luggage.svg');
+    width: 4em;
+}
+
+#country-details-menu > ul:after {
+    content: url('../images/icon-camera.svg');
+    width: 4em;
+}
+
+#country-details-menu > ul > li {
+    float: left;
+    position: relative;
+}
+
+#country-details-menu a {
+    display: block;
+    padding: 1em;
+    color: #fff;
+    background-color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+}
+
+#country-details-menu a:link,
+#country-details-menu a:visited,
+#country-details-menu a: hover,
+#country-details-menu a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+#country-details-menu a:hover {
+    top:-0.2em;
+    left: -0.2em;
+    box-shadow: 0.2em 0.2em 1px #ccc;
+}
+
+#country-details-menu a:before {
+    display: inline-block;
+    width: 1.7em;
+    position: relative;
+    top: 0.5em;
+    right: 0.3em;
+}
+
+#country-details-menu ul > li:nth-child(1) a {
+    background-color: #216462;
+}
+
+#country-details-menu ul > li:nth-child(1) a:before{
+    content: url('../images/icon-places-01.svg');
+}
+
+#country-details-menu ul > li:nth-child(2) a {
+    background-color: #43AB9B;
+}
+
+#country-details-menu ul > li:nth-child(2) a:before{
+    content: url('../images/icon-food-01.svg');
+}
+
+#country-details-menu ul > li:nth-child(3) a {
+    background-color: #66883F;
+}
+
+#country-details-menu ul > li:nth-child(3) a:before{
+    content: url('../images/icon-tips-01.svg');
+}
+
+#country-details-menu ul > li:nth-child(4) a {
+    background-color: #4ea32a;
+}
+
+#country-details-menu ul > li:nth-child(4) a:before{
+    content: url('../images/icon-festivals-01.svg');
+}
+
+/*END country menu*/

@@ -142,7 +142,7 @@
 				</article>
 			</section>
 
-			<section>
+			<section id="country-details-menu">
 				<!-- Sections of each country -->
 				<ul>
 					<li>
@@ -184,62 +184,61 @@
 				<h2>Subscribe</h2>
 				
 				<form action="./index.html" method="get">
-                <table>
-                    <tr>
-                        <td width="100">
-                            <label for="email">Email:</label>
-                        </td>
-                        <td>
-                            <input type="email" name="email" id="email" required="yes" placeholder="youremail@yourdomain.com">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="selectedcountry">Select Coutry:</label>
-                        </td>
-                        <td> <select name="selectedcountry" width="200">
-                                <option value="Ecuador">
-                                    Ecuador
-                                    </option>
-                                    <option value="South Korea">
-                                    South Korea
-                                    </option>
-                                    <option value="Philippines">
-                                    Philippines
-                                    </option>
-                                    <option value="Turkey">
-                                    Turkey
-                                    </option>
-                                    <option value="Vietnam">
-                                    Vietnam
-                                    </option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">I want emails from the Travelers Inc. <a href="index.html">here.</a> The Travelers <a href="index.html">Privacy Policy.</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><input type="submit" value="Subscribe"></td>
-                    </tr>
-                </table>
-            </form>
+					<table>
+						<tr>
+							<td width="100">
+								<label for="email">Email:</label>
+							</td>
+							<td>
+								<input type="email" name="email" id="email" required="yes" placeholder="youremail@yourdomain.com">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="selectedcountry">Select Coutry:</label>
+	
+							</td>
+							<td> <select name="selectedcountry" width="200">
+									<option value="Ecuador">
+										Ecuador
+										</option>
+										<option value="South Korea">
+										South Korea
+										</option>
+										<option value="Philippines">
+										Philippines
+										</option>
+										<option value="Turkey">
+										Turkey
+										</option>
+										<option value="Vietnam">
+										Vietnam
+										</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">I want emails from the Travelers Inc. <a href="index.html">here.</a> The Travelers <a href="index.html">Privacy Policy.</a>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><input type="submit" value="Subscribe"></td>
+						</tr>
+					</table>
+            	</form>
 			</section>
 			
 			<section>
 			<!-- menu for phone number and adress -->
-				<div>
-					<p>Call <a href="tel:+6494452687">445-2663</a> For support. </p>
-				</div>
-				
-				<address>
-					Write us to <a href="mailto:info@thetravelers.com">The Travelers</a>.<br>
-					Visit us at:<br>
-					123 Bloor Street, ON<br>
-					Box 564<br>
-					Canada
-				</address>
+			<div class="phone-number">
+				<p>Call <a href="tel:+6494452687">445-2663</a> For support </p>
+			</div>
+			
+			<address>
+				<span class="email">Write us to <a href="mailto:info@thetravelers.com">The Travelers</a></span>
+				<span class="address">Visit us at: <b>123 Bloor Street, ON Box 564</b></span>
+				<span class="country">Canada</span>
+			</address>
 			</section>
 		</footer>
 	</body>

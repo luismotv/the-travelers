@@ -522,6 +522,13 @@ footer > section:last-child a:hover {
     text-shadow: 1px 1px 2px #9ce7a2;
 }
 
+footer > section:last-child .phone-number p{
+    text-align: center;
+    font-size: 1em;
+    padding-bottom: 0;
+    line-height: 1em;
+}
+
 footer > section:last-child .phone-number a:before {
     content: url('../images/icon-phone.svg');
     display: inline-block;
