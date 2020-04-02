@@ -81,6 +81,37 @@ Humber College - Web Programming and Design - ITC-5103-0NB - Team Traveler: phas
     - add an "id" attribute to the "section" tag as above. 
 
 
+/*********************************************************************************************************/
+PHASE 03 Javascript
+
+- For javascript is easier to use jQuery, but the first part of the code is made using vanilla javascrpt, and just the jQuery event to detect when all the html tags of the webpage are ready. This is very important. If javascript executes before all the HTML tags are ready, it will produce an error because it will not be able to find the HTML element.
+
+- The jQuery function to detect when all the HTML tags are ready is:
+    - jQuery(document).ready(function () {
+        //code to be executed when the webpage is ready
+      });
+    - you can also write it like:
+        - $(document).ready(function () {
+            //code to be executed when the webpage is ready
+          });
+    - or like:
+        -  jQuery(document).ready(functionToExecute());
+           
+           functioToExecute() {
+                //code to be executed
+           }
+- The jQuery library must be included before any other javascript code, in the head tag:
+    - <script src="js/jquery-3.4.1.min.js"></script>
+    - after the previous line we can include any other scripts: <script src="js/behavior.js"></script>
+
+- The file "behavior.js" is used for the "index.html" file
+    - first the keyword "let" is used to create some variables and save a references to some html elements that we need in order to apply some effect. 
+        - In lines 4 to 12, the "nav" tag with the "main-menu" id that contains the menu button and a list of links to every country page are saved in variables.
+        - In line 16, some instructions, like "document.getElementsByTagName" return an array, and one of the elements of the array contains a reference to the HTML element that we are looking for. For example: the  menuButton[0] contains the element "<button type="button">Menu</button>"
+        - In line 12, we need to get a reference to the all the list elements that contains the first gallery after the video banner, we do this with this line: "let countriesImagesButtons = document.getElementById('countries-images').getElementsByTagName('li');" this line returns an array containing all the li elements of the first gallerey contained in the element with the id "countries-images".
+        
+
+
 
 #Resources
 
