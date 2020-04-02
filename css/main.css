@@ -1,9 +1,25 @@
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('fonts/barlowcondensed-regular-webfont.woff2') format('woff2'),
+         url('fonts/barlowcondensed-regular-webfont.woff') format('woff');
+         font-weight: normal;
+
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('fonts/barlowcondensed-bold-webfont.woff2') format('woff2'),
+         url('fonts/barlowcondensed-bold-webfont.woff') format('woff');
+    font-weight: 600;
+
+}
+
 * {
     margin: 0;
     padding: 0;
     font-size: 1em;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 400;
+    font-family: 'Barlow Condensed';
+
 }
 
 body {
@@ -74,13 +90,14 @@ header {
 }
 
 #main-menu>button {
-    background-color: #268281;
+    background-color: #1d6664;
     color: #fff;
     font-size: 1.3em;
-    padding: 1em;
+    padding: 2.2em;
     border: 0;
     text-transform: uppercase;
     width: 100%;
+    height: auto;
     cursor: pointer;
 }
 
@@ -91,12 +108,21 @@ header {
 
 #main-menu>ul {
     list-style: none;
-    padding: 0.5em;
+    padding: 0;
     background-color: #268281;
 }
 
 #main-menu>ul>li {
-    padding: 0.5em 0;
+    padding: 0.5em 0.5em;
+    cursor: pointer;
+}
+
+#main-menu>ul>li:hover{
+    color: #1f6b69;
+    background-color: #9CE7A2; 
+    transition-property: background-color;
+    transition: 0.5s all;
+    transition-timing-function: linear;  
 }
 
 #main-menu>ul>li>a {
@@ -287,9 +313,10 @@ header {
 }
 
 #main-content>section:nth-of-type(2) a:after {
-    content: url('../images/camera-icon.png');
+    content: url('../images/icon-gallery.svg');
+    width: 1.5em;
     position: absolute;
-    top: 80%;
+    top: 85%;
     left: 2%;
 }
 
@@ -599,9 +626,63 @@ footer>section:last-child .country:before {
 /*styles for javascript*/
 
 .hide {
-    display: none;
+    height: 0em;
+    overflow: hidden;
+    transition-property: height;
+    transition: 1s all;
+    transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
 }
 
 .show {
-    display: block;
+    height: 14em;
+    overflow: hidden;
+    transition-property: height;
+    transition: 1s all;
+    transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
+}
+
+.colorizeLink {
+    color: #1f6867 !important;
+    transition: 0.5s all;
+    transition-timing-function: linear;
+}
+
+@keyframes noZoom {
+    from { transform: scale(1.05); }
+    to   { transform: scale(1); }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(1); }
+    to   { transform: scale(1.05); }
+  }
+
+  @keyframes opacity07 {
+    from { opacity: 1; }
+    to   { opacity: 0.7; }
+  }
+
+  @keyframes opacity1 {
+    from { opacity: 0.7; }
+    to   { opacity: 1; }
+  }
+
+.addZoomIn {
+    animation: zoomIn 0.3s ease-in-out forwards;
+    background-color: #000;
+    z-index: 99;
+}
+
+.addNoZoom {
+    animation: noZoom 0.3s ease-in-out forwards;
+    background-color: none;
+    z-index: 1;
+}
+
+.addOpacity07 {
+    animation: opacity07 0.3s ease-in-out forwards;
+}
+
+.addOpacity1 {
+    animation: opacity1 0.3s ease-in-out forwards;
 }
