@@ -141,3 +141,42 @@ Since links "a" inside a table can not be given style directly, the solution is 
 Use images in the "content" -> https://developer.mozilla.org/en-US/docs/Web/CSS/content
 
 Apply filter effects to elements -> https://developer.mozilla.org/en-US/docs/Web/CSS/filter
+
+How to add a class to an HTML element with javascript -> https://www.w3schools.com/howto/howto_js_add_class.asp
+
+CSS animation with transitions -> https://developer.mozilla.org/en-US/docs/Web/CSS/transition
+
+CSS transitions, How to use them -> https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
+
+How to embed hosted in your own hosting using @font-face -> https://css-tricks.com/snippets/css/using-font-face/
+
+How to embed multiple fonts using the same name -> https://stackoverflow.com/questions/28279989/multiple-font-weights-one-font-face-query/28339483
+
+How to use animations -> https://developer.mozilla.org/en-US/docs/Web/CSS/animation#single-animation-play-state
+
+How to replay an animation -> https://www.emailonacid.com/blog/article/email-development/restart-css-animations-in-email-using-active-pseudo-class/
+
+How to use the classList property in javascript -> https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
+
+How to use the mouseleave or mouseout events -> https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseout_event
+
+How to keep the final state of an animation, so it does not loop -> https://stackoverflow.com/questions/12991164/maintaining-the-final-state-at-end-of-a-css3-animation
+
+How to use animation events in javascript -> https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/animationend_event
+
+How to remove an event listener -> https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener
+
+More about transitions in css -> https://tympanus.net/codrops/css_reference/transition/
+
+
+
+
+
+#Tools
+
+Convert the fonts of your system to webfonts -> https://www.fontsquirrel.com/tools/webfont-generator
+
+Test regular expressions, it also includes a manual about how to use them -> https://regexr.com/
+
+
+
