@@ -44,6 +44,7 @@ jQuery(document).ready(function () {
         }
     }
 
+    //Function to animate the links in the menu.
     function goToCountry(event) {
         event.preventDefault();
 

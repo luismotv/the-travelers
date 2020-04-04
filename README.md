@@ -96,7 +96,7 @@ PHASE 03 Javascript
           });
     - or like:
         -  jQuery(document).ready(functionToExecute());
-           
+           e
            functioToExecute() {
                 //code to be executed
            }
@@ -109,6 +109,63 @@ PHASE 03 Javascript
         - In lines 4 to 12, the "nav" tag with the "main-menu" id that contains the menu button and a list of links to every country page are saved in variables.
         - In line 16, some instructions, like "document.getElementsByTagName" return an array, and one of the elements of the array contains a reference to the HTML element that we are looking for. For example: the  menuButton[0] contains the element "<button type="button">Menu</button>"
         - In line 12, we need to get a reference to the all the list elements that contains the first gallery after the video banner, we do this with this line: "let countriesImagesButtons = document.getElementById('countries-images').getElementsByTagName('li');" this line returns an array containing all the li elements of the first gallerey contained in the element with the id "countries-images".
+        - In line 22 " //loop to convert the li elements in clickable buttons, it will use the link already written in the a tag." 
+            - We loop trough all the elements of the array saved in the variable "countriesImagesButtons", and convert each li element in a clickable button. This is done because the area of the "li" tag is bigger than the area of the "a" tag.
+            - Since we need to tell the "li" tag where to go when the user click on it, we extract the "href" value of the "a" tag with this property: ".attributes.href.nodeValue"
+            - We save the "href" value of the "a" tag as a property in each li button. In javascript is easy to use varaibles as objects and assign attributes to them: " _li.linkTo = _a"
+            - For the "li" tags to be able to behave as a link or "a" tag, we use the method "addEventListener". This method works receive the following parameters:
+                - addEventListener(NAME OF THE EVENT, FUNTION TO BE EXECUTED)
+                - the NAME OF THE EVENT is a specific string. In this case we are using the following mouse events: 
+                    - 'click' -> when the user click the element.
+                    - 'mouseover' -> when the user move the mouse over the element
+                    - 'mouseout' -> when the user move the mouse away from the element
+
+        - In line 47:  //Function to animate the links in the menu. We can see an example of how a function used in an "addEventListener" method works:
+            - The function "goToCountry" receives a parameter called "event" (it is possible to use any name, like "e"). This parameter save the information of the event specified in the "addEventLister"
+            - For example "event.type" has the value of the event that the function receives, like "click", "mouseover" or "mouseout", so we can identify what the user did to the HTML element.
+            - Another useful property is "event.target", this property has the the HTML element that received the user interaction, for expample, if the user click an image, the "event.target" will have a reference to the image element.
+            - Another useful method is "event.preventDefault()". This method is usually used to prevent a link element ("a" tag) to navigate to the url in "href" when the user click on it. It is very useful to implement customized behavior on links, for example to create a modal gallery.
+            - in line 52 we use the "window.location", this property has the value of the url in the address bar of the browser, and it is possible to read it or change it by assigning another value. For example "window.location = "https://google.com" allows us to navigate to the google website.
+            - In line 52 we use a property called "this", it is similar to java. In this case "this" is the element that called the "addEventListener" method previously, for example if we write : img.addEventListener("click", myFunction), then the "this" property has a refernce to the "img" element.
+            - In line 52 we use the property "linkTo" that we assigned previously to each "li" element.
+
+        - In line 85 of the function "goFromLiToLink" we use a the "classList" property to remove a class with a css style that was used to animate an element. Though it looks reduncdant, it is important to remove the classes from an element if they are not needed anymore in order to prevent unexpected behaviors.
+
+        - In line 107 of the function "goFromLiToLink" we use an "addEventListener" method with the event "animationend". The "animationend" event detects when an animation is over, so we can perform additonal actions. In this case we remove a css class.
+
+        - In line 71 of the function "goFromLiToLink" we use the "removeEventListener" method on the event "animationend" in order to prevent the adding the same event several times, and to prevent unexpected behaviors.
+
+- In the file "css/main.css" 
+    - In line 626 "/*styles for javascript*/" we create several classes with animations. This classes will be used by javascript according to the user interaction. For example, if the user hover an element with the mouse, we will add a specific class on the element to call an animation.
+    - In line 628, we use the ".hide" class to hide the main menu with each country name.
+        - First, we set the "height" property to "0" so the element will be very small at the beginning.
+        - Second, we set the "overflow" property to "hidden" so the children elements will be hidden.
+        - Third, we use the "transition-property" and assign it the value of "height". With this instruction we are telling the css to animate the "height" property of the element.
+        - Fourth, we use the "transition:" property and assign it the values of "1s all". The first value is the duration of the animation, and the second value instructs css to apply the animation to all possible properties (in this case "height").
+        - Finally, we use "transition-timing-function" property  and assign it the value of "cubic-bezier(.29, 1.01, 1, -0.68)". The value of "cubic-beizer" is the kind of animation that we are using on the element, for example, "cubic-bezier" can create a rebound effect.
+
+    - In line 655, we are using another kind of animation. This animations is based on keyframes:
+        @keyframes zoomIn {
+            from { transform: scale(1); }
+            to   { transform: scale(1.05); }
+        }
+        - First we call the keyframe property with "@keyframes" and give it a name, in this case "zoomIn", so the name of this keyframe will be zoomIn
+        - Second, we use the "from{}" with the value "transform: scale(1)" to instructs css that the element will start with a size of 100%.
+        - Third, we use the "to{}" with the value  "transform: scale(1.05)" to instructs css that the element will end with a size of 105%;
+
+        - In line 670 we are calling the keyframes created previously by using them inside a class:
+            .addZoomIn {
+                animation: zoomIn 0.3s ease-in-out forwards;
+                background-color: #000;
+                z-index: 99;
+            }
+
+            - First, we create a class with any name, in this case the name will be "addZoomIn"
+            - Second, we use the "animation" property and assign the value "zoomIn 0.3s ease-in-out forwards"
+                - The first value "zoomIn" is the name of the keyframe created previously in line 655
+                - The second value is the time the animation will last, in this case 0.3 seconds, or 30% of a second
+                - The third value is the effect of the animation, "ease-in-out". This effect tells css that the animation will slow down at the end.
+                - The fourth value is "forwards". This instructs css to freeze the animation in the last frame to prevent the animation for looping. It is very important in thi case.
         
 
 
