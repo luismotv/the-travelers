@@ -83,6 +83,18 @@ Humber College - Web Programming and Design - ITC-5103-0NB - Team Traveler: phas
 
 /*********************************************************************************************************/
 PHASE 03 Javascript
+#2020-04-03
+
+- New Files:
+    - js/behavior.js -> this file is only for the index page.
+    - js/behavior-country.js -> this file is only for the main page of each country.
+    - js/jquery-3.4.1.min.js -> this file is very important, is the jQuery library, and it must be in every page before calling any other code in javascript.
+
+- Changes:
+    - In "css/main.css" there are new css instructions from line 626.
+    - These new instructions are used by "js/behavior.js" and " js/behavior-country.js" to add some animations and effects to the buttons.
+
+    - In the "head" tag of each page the line "<meta charset="UTF-8">" must be added to prevent some browser from trowing an error because they don't knok which character set we are using.
 
 - For javascript is easier to use jQuery, but the first part of the code is made using vanilla javascrpt, and just the jQuery event to detect when all the html tags of the webpage are ready. This is very important. If javascript executes before all the HTML tags are ready, it will produce an error because it will not be able to find the HTML element.
 
@@ -165,7 +177,7 @@ PHASE 03 Javascript
                 - The first value "zoomIn" is the name of the keyframe created previously in line 655
                 - The second value is the time the animation will last, in this case 0.3 seconds, or 30% of a second
                 - The third value is the effect of the animation, "ease-in-out". This effect tells css that the animation will slow down at the end.
-                - The fourth value is "forwards". This instructs css to freeze the animation in the last frame to prevent the animation for looping. It is very important in thi case.
+                - The fourth value is "forwards". This instructs css to freeze the animation in the last frame to prevent the animation for looping. It is very important in this case.
         
 
 
