@@ -622,8 +622,65 @@ footer>section:last-child .country:before {
 
 /*END footer*/
 
+/*BEGIN styles for the image of the modal gallery*/
+#overlapBody {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
 
-/*styles for javascript*/
+.parent-modal {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-top: 1em;
+}
+
+.modal img {
+    width: 100%;
+}
+
+.modal {
+    border: 0.3em solid #fff;
+    border-radius: 0.3em;
+    background-color: #9CE7A2;
+    padding: 0.3em;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.modal .close-button {
+    width: 3em;
+    position: absolute;
+    right: -1.7em;
+    top: -0.7em;
+    cursor: pointer;
+}
+
+.modal .close-button:hover {
+    transform: scale(1.05);
+    transform: rotateZ(7deg);
+}
+
+.hideImage {
+    height: 0em;
+    overflow: hidden;
+}
+
+.showImage {
+    height: auto;
+    overflow: hidden; 
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+}
+/*END styles for the image of the modal gallery*/
+
+/*BEGIN styles for javascript*/
 
 .hide {
     height: 0em;
@@ -686,3 +743,4 @@ footer>section:last-child .country:before {
 .addOpacity1 {
     animation: opacity1 0.3s ease-in-out forwards;
 }
+/*BEGIN styles for javascript*/
