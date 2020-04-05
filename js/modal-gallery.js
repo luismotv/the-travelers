@@ -1,5 +1,10 @@
 jQuery(document).ready( ()=> {
+
+    
+
     const galleryButtons = jQuery('#gallery a');
+    const listGalleryButtons = jQuery('.list-gallery a');
+
     const modalObject = {
         template:  `<div class="parent-modal">
                         <div class="modal">
@@ -16,10 +21,25 @@ jQuery(document).ready( ()=> {
         overlapElement: `<div id="overlapBody"></div>`
     };
 
+    function start(name1, name2) {
+        
+        if(galleryButtons.length != 0){
+            galleryButtons.click(function(event){
+                openModal(event);
+            });
+        }
 
-    galleryButtons.click(function(event){
-        openModal(event);
-    });
+        if(listGalleryButtons.length != 0){
+            listGalleryButtons.click(function(event){
+                openModal(event);
+            });
+        }
+    }
+
+
+    
+
+    start();
     
 
     function openModal(event){
@@ -144,7 +164,11 @@ jQuery(document).ready( ()=> {
         jQuery('.modal').animate({
             height: modalFinalHeight
           }, 700, function() {
-            // Animation complete.
+            jQuery('.modal .close-button').animate({
+                opacity: 1
+              }, 300, function() {
+                // Animation complete.
+            });
         });
     }
 
