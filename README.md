@@ -241,6 +241,25 @@ How to remove an event listener -> https://developer.mozilla.org/en-US/docs/Web/
 
 More about transitions in css -> https://tympanus.net/codrops/css_reference/transition/
 
+#2020-04-05
+
+jQuery append an html element inside an HTML element -> https://api.jquery.com/append/#append-content-content
+
+jQuery find the inner height of an element -> https://api.jquery.com/innerHeight/
+
+jQuery insert an HTML element before another HTML element -> 
+
+Get the height of an image after it has loaded -> https://stackoverflow.com/questions/34872975/cant-get-height-and-width-of-image-in-javascript/34873142
+
+jQuery remove an HTNL element -> https://api.jquery.com/remove/
+
+Used the resize event listener in the window -> https://developer.mozilla.org/en-US/docs/Web/API/Window/resize_event
+
+jQuery animate elements -> https://api.jquery.com/animate/
+
+Finding out if an object, or jquery object is empty -> https://stackoverflow.com/questions/13973927/check-if-object-is-empty-with-javascript-jquery/52261647
+
+
 
 
 
