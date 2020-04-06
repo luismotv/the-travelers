@@ -178,6 +178,10 @@ PHASE 03 Javascript
                 - The second value is the time the animation will last, in this case 0.3 seconds, or 30% of a second
                 - The third value is the effect of the animation, "ease-in-out". This effect tells css that the animation will slow down at the end.
                 - The fourth value is "forwards". This instructs css to freeze the animation in the last frame to prevent the animation for looping. It is very important in this case.
+
+
+#2020-04-05
+
         
 
 
