@@ -15,9 +15,9 @@ function startTime() {
       tz = today.getTime() + (today.getTimezoneOffset() * 60000) + ((8) * 3600000);
       coutry = "Philippines";
       break;
-    case ("Travelers - South  Korea"):
+    case ("Travelers - South Korea"):
       tz = today.getTime() + (today.getTimezoneOffset() * 60000) + ((9) * 3600000);
-      coutry = "Korea";
+      coutry = "South Korea";
       break;
     case ("Travelers - Turkey"):
       tz = today.getTime() + (today.getTimezoneOffset() * 60000) + ((3) * 3600000);
