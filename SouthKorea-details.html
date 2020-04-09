@@ -12,6 +12,7 @@
 		<script src="js/jquery-3.4.1.min.js"></script>
 		<script src="js/behavior-country.js"></script>
 		<script src="js/modal-gallery.js"></script>
+		<script src="js/loginValidation.js"></script>
 		<script src="js/subscription.js"></script>
 	</head>
 	
@@ -47,14 +48,14 @@
 
 			
 			<section id="subscription">
-				<form name="subscription">
-					<label for="email">Email or Phone</label>	
-					<input type="email" name="email">
-						
-					<label for="email">Password</label>	
-					<input type="password" name="password">
-					
-					<input value="Log In" type="submit">
+				<form name="loginaction" id="loginaction" action="./index.html" method="GET">
+					<label for="email">Email or Phone</label>
+					<input type="email" name="email" id="loginemail">
+					<label for="email">Password</label>
+					<input type="password" name="password" id="loginpassword">                
+					<input value="Log In" type="submit" onclick="loginValidation(event)">
+					<span id="login_email_error" style="color:red;"> </span>
+					<span id="login_password_error" style="color:red;"></span>
 				</form>
 			</section>
 		</header>
