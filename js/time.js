@@ -2,7 +2,34 @@
 function startTime() {
   var today = new Date();
   console.log(today.getTimezoneOffset());
-  tz = today.getTime() + (today.getTimezoneOffset() * 60000) + ((-5) * 3600000);
+  // Set timezome
+
+  title = document.getElementById('main-title').innerHTML;
+  console.log(title);
+  switch (title) {
+    case ("Travelers - Ecuador"):
+      tz = today.getTime() + (today.getTimezoneOffset() * 60000) + ((-5) * 3600000);
+      coutry = "Ecucador";
+      break;
+    case ("Travelers - Philippines"):
+      tz = today.getTime() + (today.getTimezoneOffset() * 60000) + ((8) * 3600000);
+      coutry = "Philippines";
+      break;
+    case ("Travelers - South  Korea"):
+      tz = today.getTime() + (today.getTimezoneOffset() * 60000) + ((9) * 3600000);
+      coutry = "Korea";
+      break;
+    case ("Travelers - Turkey"):
+      tz = today.getTime() + (today.getTimezoneOffset() * 60000) + ((3) * 3600000);
+      coutry = "Turkey";
+      break;
+    case ("Travelers - Vietnam"):
+      tz = today.getTime() + (today.getTimezoneOffset() * 60000) + ((7) * 3600000);
+      coutry = "Vietnam";
+      break;
+  }
+  
+
   today.setTime(tz);
   var h = today.getHours();
   var m = today.getMinutes();
@@ -11,7 +38,9 @@ function startTime() {
   s = checkTime(s);
   document.getElementById('country-clock').innerHTML = 
   h + ":" + m + ":" + s;
-  document.getElementById('country-clock').append(' Local time Ecuador');
+  document.getElementById('country-clock').append(' Local time in ');
+  document.getElementById('country-clock').append(coutry);
+
   var t = setTimeout(startTime, 500);
 }
 function checkTime(i) {
