@@ -8,14 +8,33 @@ let section;
 let personalDataErrorSection;
 let bestTimeToTravel;
 
+let travelerType;
+
+let visitedCities;
+
 function start(){
 
     section = jQuery('#share-your-experience');
     personalDataErrorSection = jQuery('#share-your-experience tr:nth-child(2) td');
 
+    visitedCities = {
+        elements: jQuery('#cities option'),
+        errorSection: jQuery('#share-your-experience tr:nth-child(12)'),
+        errorClass: 'error-box-cities',
+        error: '<div class="error-box-cities"><span class="error">Please choose at least one city</span></div>'
+    };
+
+    travelerType = {
+        elements: jQuery('.radio-experience'),
+        errorSection: jQuery('#share-your-experience tr:nth-child(10)'),
+        errorClass: 'error-box-traveler',
+        error: '<div class="error-box-traveler"><span class="error">Please choose at least one option</span></div>'
+    };
+
     bestTimeToTravel = {
         elements: jQuery('.checkmonth'),
         errorSection: jQuery('#share-your-experience tr:nth-child(6)'),
+        errorClass: 'error-box-months',
         error: '<div class="error-box-months"><span class="error">Please choose at least one month</span></div>'
     };
 
@@ -49,7 +68,13 @@ function start(){
     personalData = [firstName, lastName, age, email];
 
     validatePersonalData();
-    validateBestTimeToTravel();
+
+    validateChecked(bestTimeToTravel);
+
+    validateChecked(travelerType);
+
+    validateChecked(visitedCities);
+
 }
 
 function validatePersonalData() {
@@ -82,33 +107,38 @@ function validatePersonalData() {
     showErrors(errorElements, errorHTML, isCorrect, personalDataErrorSection)
 }
 
-function validateBestTimeToTravel() {
+function validateChecked(_checkedObject) {
 
     let isCorrect = false;
     const elements = [];
 
-    jQuery('.error-box-months').remove();
+    jQuery(`.${_checkedObject.errorClass}`).remove();
 
-    bestTimeToTravel.errorSection.css('position', 'relative');
-    bestTimeToTravel.errorSection.css('padding-bottom', '0');
+    _checkedObject.errorSection.css('position', 'relative');
+    _checkedObject.errorSection.css('padding-bottom', '0');
     
-    bestTimeToTravel.elements.removeClass('inputError');
+    _checkedObject.elements.removeClass('inputError');
 
-    bestTimeToTravel.elements.each(function(index, element){
+    _checkedObject.elements.each(function(index, element){
         elements.push(jQuery(element).parent());
 
         //console.log(elements[index]);
 
         if (element.checked) {
            isCorrect = true; 
-        }         
+        }
+        
+        if (element.selected) {
+            isCorrect = true; 
+        }
+
     });
 
     if(!isCorrect){
-        bestTimeToTravel.errorSection.css('padding-bottom', '3em');
+        _checkedObject.errorSection.css('padding-bottom', '3em');
     }
 
-    showErrors(elements, bestTimeToTravel.error, isCorrect, bestTimeToTravel.errorSection);
+    showErrors(elements, _checkedObject.error, isCorrect, _checkedObject.errorSection);
 
     return isCorrect;
 }
