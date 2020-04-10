@@ -1,6 +1,6 @@
 .list-gallery > li > a::after {
     top: 71%;
-    left: 1%;
+    left: 1%; /* test : commit and push*/
 }
 
 main a,
