@@ -11,7 +11,9 @@ function startTime() {
   s = checkTime(s);
   document.getElementById('country-clock').innerHTML = 
   h + ":" + m + ":" + s;
-  document.getElementById('country-clock').append(' Local time Ecuador');
+  document.getElementById('country-clock').append(' Local time in ');
+  document.getElementById('country-clock').append(coutry);
+
   var t = setTimeout(startTime, 500);
 }
 function checkTime(i) {
