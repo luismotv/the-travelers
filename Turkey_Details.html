@@ -496,18 +496,23 @@
 			<!--newsletter subscription -->
 			
 			<section>
-				
-				<h2>Subscribe</h2>
-				
-				<form action="" method="get">
 
+				<h2>Subscribe</h2>
+	
+				<form id="sub_form" action="./index.html" method="get">
+	
 					<table>
 						<tr>
 							<td width="100">
 								<label for="email">Email:</label>
 							</td>
 							<td>
-								<input type="email" name="email" id="email" required="yes" placeholder="youremail@yourdomain.com">
+								<input type="email" name="email" id="sub_email" placeholder="youremail@yourdomain.com">
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<span id="sub_email_error"></span>
 							</td>
 						</tr>
 						<tr>
@@ -515,26 +520,31 @@
 								<label for="selectedcountry">Select Coutry:</label>
 	
 							</td>
-							<td> <select name="selectedcountry" width="200">
-								        <option value="none">
-									    Select an option
-									    </option>
-								        <option value="Ecuador">
-									    Ecuador
-									    </option>
-										<option value="South Korea">
-										South Korea
-										</option>
-										<option value="Philippines">
-										Philippines
-										</option>
-										<option value="Turkey">
-										Turkey
-										</option>
-										<option value="Vietnam">
-										Vietnam
-										</option>
+							<td><select id="sub_country_option" name="selectedcountry" width="200">
+								<option value="none">
+								Select an option
+								</option>
+								<option value="Ecuador">
+								Ecuador
+								</option>
+								<option value="South Korea">
+								South Korea
+								</option>
+								<option value="Philippines">
+								Philippines
+								</option>
+								<option value="Turkey">
+								Turkey
+								</option>
+								<option value="Vietnam">
+								Vietnam
+								</option>
 								</select>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<span id="sub_country_error"></span>
 							</td>
 						</tr>
 						<tr>
@@ -542,7 +552,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td colspan="2"><input type="submit" value="Subscribe"></td>
+							<td colspan="2"><input type="submit" value="Subscribe" onclick="validateSubInfo(event)"></td>
 						</tr>
 					</table>
 	
