@@ -59,9 +59,6 @@ jQuery(document).ready(function () {
     //if the event is a click, then navigate to the url.
 
     function revealHideMenu(event) {
-        //console.log(event);
-        //this.classList.toggle('resize');
-        //console.log(menuListStyle.display);
 
         if (menuListStyle.height !== '0px') {
             menuList[0].classList.remove('show');

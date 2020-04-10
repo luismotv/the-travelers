@@ -1,7 +1,7 @@
 
 function startTime() {
   var today = new Date();
-  console.log(today.getTimezoneOffset());
+  //console.log(today.getTimezoneOffset());
   tz = today.getTime() + (today.getTimezoneOffset() * 60000) + ((-5) * 3600000);
   today.setTime(tz);
   var h = today.getHours();

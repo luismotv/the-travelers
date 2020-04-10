@@ -415,3 +415,12 @@ main > section:nth-of-type(5) > form > table tr:last-child button:after {
 /*-END submit button*/
 
 /*END form*/
+
+/*BEGIN Styles for banner-slider*/
+#banner-slider{
+  background-image:   linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,1), rgba(255,255,255,0.5)),
+                      url(../images/background-turtle.svg);
+  background-size: 5%;
+  background-repeat: space;
+}
+/*END Styles for banner-slider*/
