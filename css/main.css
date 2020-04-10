@@ -757,3 +757,42 @@ footer>section:last-child .country:before {
     animation: opacity1 0.3s ease-in-out forwards;
 }
 /*END styles for javascript*/
+
+/*BEGIN styles validate form #share-your-experience*/
+.error-box, .error-box-months{
+    padding: 0.6em 0.8em 0.6em 0.6em;
+    margin-top: 1em;
+    border: 2px solid red;
+    border-radius: 0.5em;
+    color: #fff;
+}
+
+.error-box-months{
+    position: absolute;
+    left: 0;
+    top: 1.5em;
+}
+
+.error {
+    display: block;
+    width: 100%;
+    padding: 0.2em;
+}
+
+.error:nth-child(odd) {
+    background-color: #701717;
+}
+
+.error:nth-child(even) {
+    background-color: #8c0505;
+}
+
+.error:before {
+    content: ' * ';
+    font-weight: 600;
+}
+
+.inputError {
+    border: 2px solid red;
+}
+/*END styles validate form #share-your-experience*/
