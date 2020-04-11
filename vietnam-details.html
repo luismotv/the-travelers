@@ -4,7 +4,6 @@
 
 <head>
     <title>The Travelers - Vietnam</title>
-    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/vietnam.css">
     <link rel="stylesheet" href="css/details.css">
@@ -15,6 +14,7 @@
     <script src="js/loginValidation.js"></script>
     <script src="js/banner-slider.js"></script>
     <script src="js/time.js"></script>
+    <script src="js/share-your-experience-validation.js"></script>
 
     
 </head>
@@ -374,115 +374,116 @@
             </article>
         </section>
         
-        <!-- feedback fromm user form -->
-        <section>
-            <h3>Share your experience</h3>
-            <form method="get" name="user-feedback" action="process-form.html">
-                <table>
-                    <tr>
-                        <th><label for="fname" name="lblfname">First name </label></th>
-                        <td><input type="text" name="fname" placeholder="First name" required></td>
-                        <th><label for="lname" name="lblfname"> Last name </label></th>
-                        <td><input type="text" name="lname" placeholder="Enter the last name."></td>
-                        <th><label for="age" name="age">Age</label></th>
-                        <td><input type="number" name="age" min="1" max="100" step="1"></td>
-                    </tr>
-                    <tr>
-                        <th><label for="email" name="lblemail">Email</label></th>
-                        <td colspan="5"><input type="email" name="email"></td>
-                    </tr>
-                    <tr>
-                        <th colspan="6">
-                            <h3>Best time of the year to travel</h3>
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="checkbox" name="jan" checked>
-                            <label for="jan">Jan</label>
-                        </td>
-                        <td>
-                            <input type="checkbox" name="feb">
-                            <label for="feb">Feb</label>
-                        </td>
-                        <td>
-                            <input type="checkbox" name="Mar">
-                            <label for="mar">Mar</label>
-                        </td>
-                        <td colspan="3">
-                            <input type="checkbox" name="Apr">
-                            <label for="apr">Apr</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="checkbox" name="may">
-                            <label for="may">May</label>
-                        </td>
-                        <td>
-                            <input type="checkbox" name="jun">
-                            <label for="jun">Jun</label>
-                        </td>
-                        <td>
-                            <input type="checkbox" name="jul">
-                            <label for="jul">Jul</label>
-                        </td>
-                        <td colspan="3">
-                            <input type="checkbox" name="aug">
-                            <label for="aug">Aug</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="checkbox" name="sept">
-                            <label for="sept">Sept</label>
-                        </td>
-                        <td>
-                            <input type="checkbox" name="oct">
-                            <label for="oct">Oct</label>
-                        </td>
-                        <td>
-                            <input type="checkbox" name="nov">
-                            <label for="nov">Nov</label>
-                        </td>
-                        <td colspan="3">
-                            <input type="checkbox" name="dec">
-                            <label for="dec">Dec</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th colspan="6">
-                            <h3>What are your thoughts?</h3>
-                        </th>
-                    </tr>
-                    <tr>
-                        <td colspan="6"><span>Bad</span><input type="range" name="" min="1" max="5" step="1"><span>Excellent</span></td>
-                    </tr>
-                    <tr>
-                        <th colspan="6">Traveler type: </th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="radio" name="trav-type" id="ob" value="ob">
-                            <label for="ob">Once in a blue moon</label>
-                        </td>
-                        <td>
-                            <input type="radio" name="trav-type" id="rar" value="rar">
-                            <label for="rar">Rarely</label>
-                        </td>
-                        <td>
-                            <input type="radio" name="trav-type" id="occ" value="occ">
-                            <label for="occ">Occasionally</label>
-                        </td>
-                        <td>
-                            <input type="radio" name="trav-type" id="reg" value="reg">
-                            <label for="reg">Regularly</label>
-                        </td>
-                        <td colspan="2">
-                            <input type="radio" name="trav-type" id="vf" value="vf">
-                            <label for="vf">Very frequently</label>
-                        </td>
-                    </tr>
+       <!-- BEGIN Share your experience form -->
+			<section id="share-your-experience">
+				<h3>Share your experience</h3>
+				<form method="get" name="user-feedback" action="process-form.html">
+					<table>
+						<tr>
+						  <th><label for="fname" name="lblfname">First name </label></th>
+						  <td><input id="fname" type="text" name="fname" placeholder="First name" required></td>
+						  <th><label for="lname" name="lblfname"> Last name </label></th>
+						  <td><input id="lname" type="text" name="lname" placeholder="Enter the last name."></td>
+						  <th><label for="age" name="age">Age</label></th>
+						  <td><input id="age" type="number" name="age" min="1" max="100" step="1"></td>
+						</tr>
+						<tr>
+						  <th><label for="email" name="lblemail">Email</label></th>
+						  <td colspan="5"><input id="email" type="email" name="email" placeholder="yourmail@yourdomain.com"></td>
+						</tr>
+						<tr>
+										
+						  <th colspan="6"><h4>Best time of the year to travel</h4></th>
+							 
+						</tr>
+						<tr>
+						  <td>
+							<input class="checkmonth" type="checkbox" name="jan">
+							<label for="jan">Jan</label>
+						</td>
+						  <td>
+							<input  class="checkmonth" type="checkbox"  name="feb">
+							<label for="feb">Feb</label>
+						  </td>
+						  <td>
+							<input  class="checkmonth" type="checkbox"  name="Mar">
+							<label for="mar">Mar</label>
+						  </td>
+						  <td colspan="3">
+							<input  class="checkmonth" type="checkbox"  name="Apr">
+							<label for="apr">Apr</label>
+						  </td>
+						</tr>
+						<tr>
+						  <td>
+							<input  class="checkmonth" type="checkbox"  name="may">
+							<label for="may">May</label>
+						  </td>
+						  <td>
+							<input  class="checkmonth" type="checkbox"  name="jun">
+							<label for="jun">Jun</label>
+						  </td>
+						  <td>
+							<input  class="checkmonth" type="checkbox"  name="jul">
+							<label for="jul">Jul</label>
+						  </td>
+						  <td colspan="3">
+							<input  class="checkmonth" type="checkbox"  name="aug">
+							<label for="aug">Aug</label>
+						  </td>
+						</tr>
+						<tr>
+						  <td>
+							<input  class="checkmonth" type="checkbox"  name="sept">
+						  	<label for="sept">Sept</label>
+						  </td>
+						  <td>
+							<input  class="checkmonth" type="checkbox"  name="oct">
+							<label for="oct">Oct</label>
+						  </td>
+						  <td>
+							<input  class="checkmonth" type="checkbox"  name="nov">
+							<label for="nov">Nov</label>
+						  </td>
+						  <td colspan="3">
+							<input  class="checkmonth" type="checkbox"  name="dec">
+							<label for="dec">Dec</label>
+						  </td>
+						</tr>
+						<tr>
+										
+						  <th colspan="6"><h4>What are your thoughts?</h4></th>
+							 
+						</tr>
+						<tr>
+						  <td colspan="6"><span>Bad</span><input type="range" name="" min="1" max="5" step="1"><span>Excellent</span></td>
+						</tr>
+						<tr>
+						  <th colspan="6"><h4>Traveler type:</h4> </th>
+						</tr>
+						<tr>
+						  <td>
+							<input class="radio-experience" type="radio"name="trav-type" id="ob" value="ob">
+							<label for="ob">Once in a blue moon</label>
+						  </td>
+						  <td>
+							<input class="radio-experience" type="radio"name="trav-type" id="rar" value="rar">
+							<label for="rar">Rarely</label>
+						  </td>
+						  <td>
+							<input class="radio-experience" type="radio"name="trav-type" id="occ" value="occ">
+							<label for="occ">Occasionally</label> 
+						  </td>
+						  <td>
+							<input class="radio-experience" type="radio"name="trav-type" id="reg" value="reg">
+							<label for="reg">Regularly</label>
+						  </td>
+						  <td colspan="2">
+							<input class="radio-experience" type="radio"name="trav-type" id="vf" value="vf">
+							<label for="vf">Very frequently</label>
+						  </td>
+						</tr>
+						
 
                     <tr>
                         <th>
@@ -495,31 +496,33 @@
 									<!-- drag options  / size: see the number of options / multiple: select multiple options -->
 										<option value="SGN">Saigon</option>
 										<option value="DAN">Da Nang</option>
+										   
 										<option value="HAN">Hanoi</option>
 										<option value="HUE">Hue</option>
 										<option value="HON">Hoi An</option>
+											 
 									</select>
                         </td>
                     </tr>
                     <tr>
-                        <td>
-                            <label for="comm">Comments: </label>
-                        </td>
-                        <td colspan="5">
-                            <textarea name="comm" placeholder="Enter your comments here." rows=3 " cols="50 ">
+						  <td>
+							  <label for="comm">Comments: </label>
+						  </td>
+						  <td colspan="5">
+							<textarea class="comments-area" name="comm" placeholder="Enter your comments here." rows="3" cols="50">
 							</textarea>
 						  </td>
 						</tr>
 						<tr>
-						  <td colspan="6 ">
-							<label for="upFile ">Upload your most memorable photo</label>
+						  <td colspan="6">
+							<label for="upFile">Upload your most memorable photo</label>
 			
-							<input type="file " name="upFile ">
+							<input id="upload-photo" type="file" name="upFile">
 						  </td>
 						</tr>
 						<tr>
-						  <td colspan="6 ">
-							<button type="submit ">
+						  <td colspan="6">
+							<button id="submit-experience" type="button">
 								<img src="images/icon-plane.svg">
 							</button>
 						  </td>
@@ -527,6 +530,7 @@
 					  </table>
 				</form>
 			</section>
+			<!-- END Share your experience form -->  
 
 		</main>
 		

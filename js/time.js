@@ -1,11 +1,11 @@
 
 function startTime() {
   var today = new Date();
-  console.log(today.getTimezoneOffset());
+  //console.log(today.getTimezoneOffset());
   // Set timezome
 
   title = document.getElementById('main-title').innerHTML;
-  console.log(title);
+  //console.log(title);
   switch (title) {
     case ("Travelers - Ecuador"):
       tz = today.getTime() + (today.getTimezoneOffset() * 60000) + ((-5) * 3600000);

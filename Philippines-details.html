@@ -13,6 +13,7 @@
         <script src="js/loginValidation.js"></script>
         <script src="js/banner-slider.js"></script>
         <script src="js/time.js"></script>
+        <script src="js/share-your-experience-validation.js"></script>
     </head>
 
     <body>
@@ -698,77 +699,78 @@
                     </ul>
                 </article>
             </section>
-            <!-- feedback from user form -->
-			<section>
+            
+            <!-- BEGIN Share your experience form -->
+			<section id="share-your-experience">
 				<h3>Share your experience</h3>
 				<form method="get" name="user-feedback" action="process-form.html">
 					<table>
 						<tr>
 						  <th><label for="fname" name="lblfname">First name </label></th>
-						  <td><input type="text" name="fname" placeholder="First name" required></td>
+						  <td><input id="fname" type="text" name="fname" placeholder="First name" required></td>
 						  <th><label for="lname" name="lblfname"> Last name </label></th>
-						  <td><input type="text" name="lname" placeholder="Enter the last name."></td>
+						  <td><input id="lname" type="text" name="lname" placeholder="Enter the last name."></td>
 						  <th><label for="age" name="age">Age</label></th>
-						  <td><input type="number" name="age" min="1" max="100" step="1"></td>
+						  <td><input id="age" type="number" name="age" min="1" max="100" step="1"></td>
 						</tr>
 						<tr>
 						  <th><label for="email" name="lblemail">Email</label></th>
-						  <td colspan="5"><input type="email" name="email" placeholder="yourmail@yourdomain.com"></td>
+						  <td colspan="5"><input id="email" type="email" name="email" placeholder="yourmail@yourdomain.com"></td>
 						</tr>
 						<tr>
 						  <th colspan="6"><h4>Best time of the year to travel</h4></th>
 						</tr>
 						<tr>
 						  <td>
-							<input type="checkbox" name="jan" checked>
+							<input class="checkmonth" type="checkbox" name="jan">
 							<label for="jan">Jan</label>
 						</td>
 						  <td>
-							<input type="checkbox" name="feb">
+							<input  class="checkmonth" type="checkbox"  name="feb">
 							<label for="feb">Feb</label>
 						  </td>
 						  <td>
-							<input type="checkbox" name="Mar">
+							<input  class="checkmonth" type="checkbox"  name="Mar">
 							<label for="mar">Mar</label>
 						  </td>
 						  <td colspan="3">
-							<input type="checkbox" name="Apr">
+							<input  class="checkmonth" type="checkbox"  name="Apr">
 							<label for="apr">Apr</label>
 						  </td>
 						</tr>
 						<tr>
 						  <td>
-							<input type="checkbox" name="may">
+							<input  class="checkmonth" type="checkbox"  name="may">
 							<label for="may">May</label>
 						  </td>
 						  <td>
-							<input type="checkbox" name="jun">
+							<input  class="checkmonth" type="checkbox"  name="jun">
 							<label for="jun">Jun</label>
 						  </td>
 						  <td>
-							<input type="checkbox" name="jul">
+							<input  class="checkmonth" type="checkbox"  name="jul">
 							<label for="jul">Jul</label>
 						  </td>
 						  <td colspan="3">
-							<input type="checkbox" name="aug">
+							<input  class="checkmonth" type="checkbox"  name="aug">
 							<label for="aug">Aug</label>
 						  </td>
 						</tr>
 						<tr>
 						  <td>
-							<input type="checkbox" name="sept">
+							<input  class="checkmonth" type="checkbox"  name="sept">
 						  	<label for="sept">Sept</label>
 						  </td>
 						  <td>
-							<input type="checkbox" name="oct">
+							<input  class="checkmonth" type="checkbox"  name="oct">
 							<label for="oct">Oct</label>
 						  </td>
 						  <td>
-							<input type="checkbox" name="nov">
+							<input  class="checkmonth" type="checkbox"  name="nov">
 							<label for="nov">Nov</label>
 						  </td>
 						  <td colspan="3">
-							<input type="checkbox" name="dec">
+							<input  class="checkmonth" type="checkbox"  name="dec">
 							<label for="dec">Dec</label>
 						  </td>
 						</tr>
@@ -783,23 +785,23 @@
 						</tr>
 						<tr>
 						  <td>
-							<input type="radio" name="trav-type" id="ob" value="ob">
+							<input class="radio-experience" type="radio"name="trav-type" id="ob" value="ob">
 							<label for="ob">Once in a blue moon</label>
 						  </td>
 						  <td>
-							<input type="radio" name="trav-type" id="rar" value="rar">
+							<input class="radio-experience" type="radio"name="trav-type" id="rar" value="rar">
 							<label for="rar">Rarely</label>
 						  </td>
 						  <td>
-							<input type="radio" name="trav-type" id="occ" value="occ">
+							<input class="radio-experience" type="radio"name="trav-type" id="occ" value="occ">
 							<label for="occ">Occasionally</label> 
 						  </td>
 						  <td>
-							<input type="radio" name="trav-type" id="reg" value="reg">
+							<input class="radio-experience" type="radio"name="trav-type" id="reg" value="reg">
 							<label for="reg">Regularly</label>
 						  </td>
 						  <td colspan="2">
-							<input type="radio" name="trav-type" id="vf" value="vf">
+							<input class="radio-experience" type="radio"name="trav-type" id="vf" value="vf">
 							<label for="vf">Very frequently</label>
 						  </td>
 						</tr>
@@ -825,7 +827,7 @@
 							  <label for="comm">Comments: </label>
 						  </td>
 						  <td colspan="5">
-							<textarea name="comm" placeholder="Enter your comments here." rows="3" cols="50">
+							<textarea class="comments-area" name="comm" placeholder="Enter your comments here." rows="3" cols="50">
 							</textarea>
 						  </td>
 						</tr>
@@ -833,12 +835,12 @@
 						  <td colspan="6">
 							<label for="upFile">Upload your most memorable photo</label>
 			
-							<input type="file" name="upFile">
+							<input id="upload-photo" type="file" name="upFile">
 						  </td>
 						</tr>
 						<tr>
 						  <td colspan="6">
-							<button type="submit">
+							<button id="submit-experience" type="button">
 								<img src="images/icon-plane.svg">
 							</button>
 						  </td>
@@ -846,6 +848,7 @@
 					  </table>
 				</form>
 			</section>
+			<!-- END Share your experience form -->							  
         </main>
         <footer>
             <section>

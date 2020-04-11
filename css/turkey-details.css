@@ -14,3 +14,14 @@ main a:active {
 main a:hover {
   font-weight: 600;
 }
+
+
+/*BEGIN Styles for banner-slider*/
+#banner-slider{
+  background-image:   linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0.5), rgba(255,255,255,0.3)),
+                      url(../images/bg-turkey.png);
+  background-size: 8%;
+  background-position: bottom left;
+  background-repeat: space;
+}
+/*END Styles for banner-slider*/
