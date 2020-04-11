@@ -5,6 +5,8 @@ jQuery(document).ready(function () {
     let menuButton = mainMenu.getElementsByTagName('button');
     let menuList = mainMenu.getElementsByTagName('ul');
 
+    let visitOurCountries = jQuery('#visit-our-countries-link');
+
     //menuList is an array, so the ul tag with li elements are in the array[0]
     let menuListStyle = getComputedStyle(menuList[0]);
 
@@ -16,6 +18,15 @@ jQuery(document).ready(function () {
     function start() {
         menuButton[0].addEventListener('click', revealHideMenu, true);
         menuList[0].classList.add('hide');
+
+        visitOurCountries.click(function(event){
+            event.preventDefault();
+
+            let jumpTo = jQuery('#countries-images');
+            let position = jumpTo.offset();
+            jQuery('html, body').stop().animate({ scrollTop: position.top }, 500);    
+        })
+
         converLiToLinks();
     }
 

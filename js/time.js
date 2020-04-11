@@ -9,7 +9,7 @@ function startTime() {
   switch (title) {
     case ("Travelers - Ecuador"):
       tz = today.getTime() + (today.getTimezoneOffset() * 60000) + ((-5) * 3600000);
-      coutry = "Ecucador";
+      coutry = "Ecuador";
       break;
     case ("Travelers - Philippines"):
       tz = today.getTime() + (today.getTimezoneOffset() * 60000) + ((8) * 3600000);
@@ -38,7 +38,7 @@ function startTime() {
   s = checkTime(s);
   document.getElementById('country-clock').innerHTML = 
   h + ":" + m + ":" + s;
-  document.getElementById('country-clock').append(' Local time in ');
+  document.getElementById('country-clock').append(' (24-hour format) - Local time in ');
   document.getElementById('country-clock').append(coutry);
 
   var t = setTimeout(startTime, 500);

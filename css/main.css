@@ -25,8 +25,8 @@
 body {
     max-width: 1330px;
     margin: 0 auto;
-    /*margin: top right bottom left*/
     overflow-x: hidden;
+    background-color: #fff;
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -35,6 +35,10 @@ a:link, a:visited, a:hover, a:active {
 
 a:hover {
     text-decoration: none;
+}
+
+h2 {
+    margin-left: 0.5em;
 }
 
 header>h1 {
@@ -346,7 +350,15 @@ header {
 footer {
     margin-top: 2em;
     padding-top: 1.5em;
+}
+
+footer:before {
+    display: block;
+    margin: 0 auto;
+    content: ' ';
+    width: 98%;
     border-top: 0.1em solid #268281;
+    margin-bottom: 1em;
 }
 
 
@@ -841,7 +853,7 @@ footer>section:last-child .country:before {
     display: inline-block;
     position: absolute;
     top: 0.15em;
-    left: 85%;
+    left: 76%;
     color: #fff;
     background-color: #3d6d40;
     padding: 0.2em;
@@ -864,3 +876,37 @@ footer>section:last-child .country:before {
     border: 0.1em solid rgba(255, 255, 255, 0.7);
 }
 /*END list gallery camera icon*/
+
+/*BEGIN background page*/
+#bg-body {
+    position: absolute;
+    width: 1330px;
+    background-color:#fff;
+    top: 0;
+    z-index: -1;
+}
+
+#bg-page {
+    position: absolute;
+    width: 100%;
+    background-color:silver;
+    background-image:
+    radial-gradient(circle at 100% 150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0    150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50%  100%, white 10%, silver 10%, silver 23%, white 23%, white 30%, silver 30%, silver 43%, white 43%, white 50%, silver 50%, silver 63%, white 63%, white 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent),
+    radial-gradient(circle at 0    50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent);
+    background-size: 100px 50px;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+/*END backgorund page*/
+
+/*BEGIN login validation*/
+#login_email_error, #login_password_error {
+    background-color: #fff;
+    padding: 0.3em;
+    border-radius: 0.3em;
+}
+/*END login validation*/
