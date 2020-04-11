@@ -29,6 +29,14 @@ body {
     overflow-x: hidden;
 }
 
+a:link, a:visited, a:hover, a:active {
+    color: #268281;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 header>h1 {
     text-transform: uppercase;
     color: #fff;
@@ -840,3 +848,19 @@ footer>section:last-child .country:before {
     border-radius: 0.3em;
 }
 /*END styles #country-clock*/
+
+/*BEGIN list gallery camera icon*/
+.list-gallery>li>a:after {
+    content: url('../images/icon-gallery.svg');
+    position: relative;
+    display: block;
+    font-size: 1em !important;
+    width: 1.5em;
+    top: -61px;
+    left: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.2em 0.3em 0em 0.3em;
+    border-radius: 0.3em;
+    border: 0.1em solid rgba(255, 255, 255, 0.7);
+}
+/*END list gallery camera icon*/

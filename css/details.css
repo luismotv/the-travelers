@@ -50,13 +50,6 @@ section > article {
   display: block;
 }
 
-.list-gallery > li > a:after{
-  content: url('../images/camera-icon.png');
-  position: absolute;
-  top: 80%;
-  left: 1%;
-}
-
 .list-gallery > li img:hover{
   filter: brightness(0.8) blur(1px);
 }
