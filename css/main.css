@@ -831,9 +831,9 @@ footer>section:last-child .country:before {
 
 #country-clock {
     display: inline-block;
-    position: relative;
+    position: absolute;
     top: 0.15em;
-    left: 65%;
+    left: 85%;
     color: #fff;
     background-color: #3d6d40;
     padding: 0.2em;
