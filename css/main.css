@@ -759,7 +759,7 @@ footer>section:last-child .country:before {
 /*END styles for javascript*/
 
 /*BEGIN styles validate form #share-your-experience*/
-.error-box, .error-box-months{
+.error-box, .error-box-months, .error-box-traveler, .error-box-cities, .error-box-comments, .error-box-upload, .error-box-form, .success-box-form{
     padding: 0.6em 0.8em 0.6em 0.6em;
     margin-top: 1em;
     border: 2px solid red;
@@ -767,10 +767,33 @@ footer>section:last-child .country:before {
     color: #fff;
 }
 
-.error-box-months{
+.success-box-form {
+    border: 2px solid#9CE7A2;
+    background-color: #268281;
+}
+
+.error-box-months, .error-box-traveler, .error-box-cities, .error-box-comments, .error-box-upload, .error-box-form, .success-box-form{
     position: absolute;
     left: 0;
     top: 1.5em;
+}
+
+.error-box-form, .success-box-form {
+    top: -1em;
+    left: 7em;
+}
+
+.error-box-upload {
+    left: 1em;
+    background-color: #fff;
+}
+
+.error-box-cities{
+    top: 5.5em;
+}
+
+.error-box-comments {
+    top: 8em;
 }
 
 .error {
@@ -792,7 +815,28 @@ footer>section:last-child .country:before {
     font-weight: 600;
 }
 
+.success {
+    background-color: #268281; 
+}
+
 .inputError {
     border: 2px solid red;
 }
 /*END styles validate form #share-your-experience*/
+
+/*BEGIN styles #country-clock*/
+#breadcrumbs {
+    position: relative;
+}
+
+#country-clock {
+    display: inline-block;
+    position: relative;
+    top: 0.15em;
+    left: 65%;
+    color: #fff;
+    background-color: #3d6d40;
+    padding: 0.2em;
+    border-radius: 0.3em;
+}
+/*END styles #country-clock*/
